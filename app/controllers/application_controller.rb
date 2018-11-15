@@ -8,11 +8,21 @@ class ApplicationController < ActionController::Base
 
   protected
 
- def configure_permitted_parameters
- 	added_attrs = [ :username, :email, :password, :password_confirmation　]
-    devise_parameter_sanitizer.permit :sign_up, keys: added_attrs
-    devise_parameter_sanitizer.permit :account_update, keys: added_attrs
-    devise_parameter_sanitizer.permit :sign_in, keys: added_attrs
-  end
+    def configure_permitted_parameters
+      added_attrs = [ :username, :email, :password, :password_confirmation　]
+      devise_parameter_sanitizer.permit :sign_up, keys: added_attrs
+      devise_parameter_sanitizer.permit :account_update, keys: added_attrs
+      devise_parameter_sanitizer.permit :sign_in, keys: added_attrs
+    end
+
+  private
+
+    # ユーザーのログインを確認する
+    def logged_in_user
+      unless user_signed_in?
+        store_location
+        redirect_to login_url
+      end
+    end
 
 end
