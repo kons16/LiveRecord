@@ -1,12 +1,27 @@
 <li>
-	<%= micropost.year %>年
-	<%= micropost.month %>月
-	<%= micropost.day %>日
-	<%= micropost.teama %>VS<%= micropost.teamb %>
-	(<%= micropost.apoint %> - <%= micropost.bpoint %>)
-	<br>
-	<%= micropost.place %>
-	<%= micropost.myteam %>
-	<%= micropost.logo %>
+	<!-- スポーツ観戦の場合-->
+	<% if micropost.teama != '' and micropost.teamb != '' %>
+		<%= micropost.year %>年<%= micropost.month %>月<%= micropost.day %>日
+		<%= micropost.teama %>VS<%= micropost.teamb %>
+		(<%= micropost.apoint %> - <%= micropost.bpoint %>)
+		<br>
+		<%= micropost.place %>
+		<%= micropost.myteam %>
+
+		<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=
+		<%= micropost.teama %> vs <%= micropost.teamb %> を観戦しました。(<%= micropost.place %> 結果:<%= micropost.apoint %>-<%= micropost.bpoint %>)" target="_blank" >ツイート</a>
+
+	<!-- ライブの場合-->
+	<% else %>
+		<%= micropost.year %>年<%= micropost.month %>月<%= micropost.day %>日
+		<%= micropost.livetitle %>
+		<br>
+		<%= micropost.place %>
+		<%= micropost.artist %>
+
+		<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=<%= micropost.artist %>『<%= micropost.livetitle %>』(<%= micropost.place %>) に参加しました。" target="_blank" >ツイート</a>
+
+	<% end %>
 
 </li>
+<br>
