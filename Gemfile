@@ -22,6 +22,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'devise'
 gem 'omniauth-twitter'
 gem 'dotenv-rails'
+gem 'will_paginate'
 
 
 # Use CoffeeScript for .coffee assets and views
