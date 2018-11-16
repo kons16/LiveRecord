@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<head>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
 <html>
   <head>
     <title>アドチケ</title>
@@ -9,24 +13,11 @@
   </head>
 
   <body>
-    <header>
-        <nav>
-          <% if user_signed_in? %>
-              <strong><%= link_to current_user.username, user_path(current_user.id) %></strong>
-              <%= link_to 'プロフィール変更', edit_user_registration_path %>
-              <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
-              <%= link_to 'チケットを追加',
-                 new_micropost_path %>
-          <% else %>
-              <%= link_to 'サインアップ', new_user_registration_path %>
-              <%= link_to 'ログイン', new_user_session_path %>
-          <% end %>
-        </nav>
-    </header>
+    <%= render 'layouts/header' %>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
 
   </body>
 </html>
