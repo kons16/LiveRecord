@@ -1,4 +1,4 @@
-<li>
+<div class="ticket-box">
 	<!-- スポーツ観戦の場合-->
 	<% if micropost.teama != '' and micropost.teamb != '' %>
 		<%= micropost.year %>年<%= micropost.month %>月<%= micropost.day %>日
@@ -10,7 +10,7 @@
 
 		<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=
 		<%= micropost.teama %> vs <%= micropost.teamb %> を観戦しました。(<%= micropost.place %> 結果:<%= micropost.apoint %>-<%= micropost.bpoint %>)" target="_blank" >ツイート</a>
-		
+
 		<%= link_to "削除", micropost, method: :delete %>
 
 	<!-- ライブの場合-->
@@ -58,12 +58,10 @@
 		<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=<%= micropost.artist %>『<%= micropost.livetitle %>』(<%= micropost.place %>) に参加しました。" target="_blank" >ツイート</a>
 
 		
-		
+
 		<%= link_to "削除", micropost, method: :delete %>
 		
 
 	<% end %>
 
-
-</li>
-<br>
+</div>

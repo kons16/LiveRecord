@@ -3,7 +3,7 @@
 
 $gray-medium-light: #eaeaea;
 
-/* universal */
+/* 全体 */
 
 section {
   overflow: auto;
@@ -20,7 +20,7 @@ textarea {
   }
 }
 
-/* typography */
+/*  タイポグラフィー　*/
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -48,7 +48,7 @@ p {
 }
 
 
-/* header */
+/* ヘッダー */
 
 .navbar{
     border-radius: 0;
@@ -63,5 +63,17 @@ p {
 
 .navbar-default .navbar-nav >li > a:hover{
     color: #aaa;
+}
+
+
+/* チケット */
+.ticket-box {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    width: 300px;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 2px #6091d3;	/*線*/
+    border-radius: 10px;	/*角の丸み*/
 }
 
