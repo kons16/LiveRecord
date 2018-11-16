@@ -14,7 +14,11 @@ class MicropostsController < ApplicationController
   	else
   		render 'new'
   	end
+  end
 
+  def destroy
+    @micropost.destroy
+    redirect_to request.referrer || root_url
   end
 
   private
