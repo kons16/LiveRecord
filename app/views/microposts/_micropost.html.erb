@@ -2,11 +2,48 @@
 	<!-- スポーツ観戦の場合-->
 	<% if micropost.teama != '' and micropost.teamb != '' %>
 		<%= micropost.year %>年<%= micropost.month %>月<%= micropost.day %>日
-		<%= micropost.teama %>VS<%= micropost.teamb %>
+		<%= micropost.teama %> VS <%= micropost.teamb %>
 		(<%= micropost.apoint %> - <%= micropost.bpoint %>)
 		<br>
 		<%= micropost.place %>
+		&emsp;
 		<%= micropost.myteam %>
+		&ensp;
+
+		<!-- ロゴの表示 -->
+		<% if micropost.logo == "中日ドラゴンズ" %>
+			<%= image_tag('/dragons.png', :size => "40x40") %>
+		<% elsif micropost.logo == "" %>
+
+		<% elsif micropost.logo == "" %>
+
+		<% elsif micropost.logo == "" %>
+
+		<% elsif micropost.logo == "" %>
+
+		<% elsif micropost.logo == "" %>
+
+		<% elsif micropost.logo == "" %>
+
+		<% elsif micropost.logo == "" %>
+
+		<% elsif micropost.logo == "" %>
+
+		<% elsif micropost.logo == "" %>
+
+		<% elsif micropost.logo == "" %>
+
+		<% elsif micropost.logo == "" %>
+
+		<% elsif micropost.logo == "" %>
+
+		<% elsif micropost.logo == "" %>
+
+		<% elsif micropost.logo == "" %>
+
+		<% end %>
+
+		<br>
 
 		<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=
 		<%= micropost.teama %> vs <%= micropost.teamb %> を観戦しました。(<%= micropost.place %> 結果:<%= micropost.apoint %>-<%= micropost.bpoint %>)" target="_blank" >ツイート</a>
@@ -19,8 +56,9 @@
 		<%= micropost.livetitle %>
 		<br>
 		<%= micropost.place %>
+		&emsp;
 		<%= micropost.artist %>
-		<br>
+		&ensp;
 
 		<!-- ロゴの表示 -->
 		<% if micropost.logo == "乃木坂46" %>
@@ -55,9 +93,9 @@
 
 		<% end %>
 
-		<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=<%= micropost.artist %>『<%= micropost.livetitle %>』(<%= micropost.place %>) に参加しました。" target="_blank" >ツイート</a>
+		<br>
 
-		
+		<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=<%= micropost.artist %>『<%= micropost.livetitle %>』(<%= micropost.place %>) に参加しました。" target="_blank" >ツイート</a>
 
 		<%= link_to "削除", micropost, method: :delete %>
 		
