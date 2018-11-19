@@ -1,0 +1,7 @@
+アーカイブ
+<br>
+
+<% @years.each do |year| %>
+	<%= link_to year, user_path(@user.id, archive_year: year) %>
+	<br>
+<% end %>

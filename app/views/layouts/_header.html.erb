@@ -6,9 +6,9 @@
 
             <!-- トグル -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
             </button>
 
         </div>
@@ -21,27 +21,27 @@
             <ul class="nav navbar-nav navbar-right">
 
                 <% if user_signed_in? %>
-					
-	                <li>
-	                	<%= link_to "マイページ", user_path(current_user.id) %>
-	                </li>
-					<li>
-	                	<%= link_to 'チケットを追加', new_micropost_path %>
-	                </li>
-	                <li>
-	                	<%= link_to 'プロフィール変更', edit_user_registration_path %>
-	                </li>
-	                <li>
-	                	<%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
-	                </li>
-                    
-                <% else %>
 
-					<li>
-                    	<%= link_to 'ログイン', new_user_session_path %>
+                    <li>
+                        <%= link_to "マイページ", user_path(current_user.id) %>
                     </li>
                     <li>
-                   		<%= link_to 'サインアップ', new_user_registration_path %>
+                        <%= link_to 'チケットを追加', new_micropost_path %>
+                    </li>
+                    <li>
+                        <%= link_to 'プロフィール変更', edit_user_registration_path %>
+                    </li>
+                    <li>
+                        <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+                    </li>
+
+                <% else %>
+
+                    <li>
+                        <%= link_to 'ログイン', new_user_session_path %>
+                    </li>
+                    <li>
+                        <%= link_to 'サインアップ', new_user_registration_path %>
                     </li>
 
                 <% end %>
@@ -49,5 +49,5 @@
             </ul>
         </div>
     </div>
-    
+
 </nav>
