@@ -10,11 +10,7 @@ class UsersController < ApplicationController
 
     	# アーカイブ時
     	if @archive_year.present?
-    		if @archive_year == "All"
-				@microposts =  @user.microposts.paginate(:page => params[:page], :per_page => 5)    			
-    		else
-    			@microposts = @microposts.where(year: @archive_year)
-    		end
+    		@microposts = @microposts.where(year: @archive_year)
     	end
 
     	# 並び替え
