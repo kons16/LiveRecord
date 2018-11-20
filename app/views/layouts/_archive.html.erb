@@ -1,0 +1,13 @@
+<div class='archive'>
+	年度別アーカイブ
+	<br>
+
+	<%= link_to "All", user_path(@user.id) %>
+	<br>
+
+	<% @years.zip(@cnt_year).each do |year,cnt| %>
+		<%= link_to "#{year} (#{cnt})", user_path(@user.id, archive_year: year) %>
+		
+		<br>
+	<% end %>
+</div>

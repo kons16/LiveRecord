@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     resources :microposts
 
 	root 'pages#index'
+	
 
 end

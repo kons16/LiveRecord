@@ -5,13 +5,27 @@ class UsersController < ApplicationController
 	# マイページにアクセス
 	def show
     	@user = User.find(params[:id])
+    	@archive_year = params[:archive_year]
     	@microposts =  @user.microposts.paginate(:page => params[:page], :per_page => 5)
+
+    	# アーカイブ時
+    	if @archive_year.present?
+    		@microposts = @microposts.where(year: @archive_year)
+    	end
+
     	# 並び替え
     	@microposts = @microposts.order(year: "DESC")
     	@microposts = @microposts.order(month: "DESC")
     	@microposts = @microposts.order(day: "DESC")
 
-    	
+    	# Archive
+    	@years = []
+    	@cnt_year = []	# その年度に追加したチケットの枚数
+    	@years = @user.microposts.pluck(:year)
+    	@years = @years.uniq
+
+    	@years.each { |year| @cnt_year.push(@user.microposts.where(year: year).count) }
+
 	end
 
 	def index
