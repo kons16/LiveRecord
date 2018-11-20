@@ -2,7 +2,7 @@
 	年度別アーカイブ
 	<br>
 
-	<%= link_to "All", user_path(@user.id) %>
+	<%= link_to "All (#{@cnt_allyear})", user_path(@user.id) %>
 	<br>
 
 	<% @years.zip(@cnt_year).each do |year,cnt| %>
