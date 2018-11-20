@@ -21,10 +21,12 @@ class UsersController < ApplicationController
     	# Archive
     	@years = []
     	@cnt_year = []	# その年度に追加したチケットの枚数
+    	@cnt_allyear = []
     	@years = @user.microposts.pluck(:year)
     	@years = @years.uniq
 
     	@years.each { |year| @cnt_year.push(@user.microposts.where(year: year).count) }
+    	@cnt_allyear = @user.microposts.count
 
 	end
 

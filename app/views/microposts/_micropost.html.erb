@@ -12,7 +12,7 @@
 
 		<!-- ロゴの表示 -->
 		<% if micropost.logo == "中日ドラゴンズ" %>
-			<%= image_tag('/dragons.png', :size => "40x40") %>
+			<%= image_tag('/logo/dragons.png', :size => "40x40") %>
 		<% elsif micropost.logo == "" %>
 
 		<% elsif micropost.logo == "" %>
@@ -62,9 +62,9 @@
 
 		<!-- ロゴの表示 -->
 		<% if micropost.logo == "乃木坂46" %>
-			<%= image_tag('/nogizaka46.png', :size => "40x50") %>
-		<% elsif micropost.logo == "" %>
-
+			<%= image_tag('/logo/nogizaka46.png', :size => "40x50") %>
+		<% elsif micropost.logo == "欅坂46" %>
+			<%= image_tag('/logo/keyakizaka46.png', :size => "40x50") %>
 		<% elsif micropost.logo == "" %>
 
 		<% elsif micropost.logo == "" %>
