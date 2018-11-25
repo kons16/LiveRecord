@@ -6,49 +6,50 @@
 		(<%= micropost.apoint %> - <%= micropost.bpoint %>)
 		<br>
 		<%= micropost.place %>
-		&emsp;
-		<%= micropost.myteam %>
-		&ensp;
+		
 
-		<!-- ロゴの表示 -->
-		<% if micropost.logo == "中日ドラゴンズ" %>
-			<%= image_tag('/logo/dragons.png', :size => "40x40") %>
-		<% elsif micropost.logo == "" %>
+		<div class="ticket-logo">
 
-		<% elsif micropost.logo == "" %>
+			<!-- ロゴの表示 -->
+			<% if micropost.logo == "中日ドラゴンズ" %>
+				<%= image_tag('/logo/dragons.png', :size => "40x40") %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% end %>
+			<% elsif micropost.logo == "" %>
 
-		<br>
+			<% end %>
+		</div>
 
-		<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=
+		<div id='tweetdele'>
+			<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=
 		<%= micropost.teama %> vs <%= micropost.teamb %> を観戦しました。(<%= micropost.place %> 結果:<%= micropost.apoint %>-<%= micropost.bpoint %>)" target="_blank" >ツイート</a>
 
-		<%= link_to "削除", micropost, method: :delete %>
+			<%= link_to "削除", micropost, method: :delete %>
+		</div>
 
 	<!-- ライブの場合-->
 	<% else %>
@@ -56,48 +57,49 @@
 		<%= micropost.livetitle %>
 		<br>
 		<%= micropost.place %>
-		&emsp;
-		<%= micropost.artist %>
-		&ensp;
+		
+		<div class="ticket-logo">
 
-		<!-- ロゴの表示 -->
-		<% if micropost.logo == "乃木坂46" %>
-			<%= image_tag('/logo/nogizaka46.png', :size => "40x50") %>
-		<% elsif micropost.logo == "欅坂46" %>
-			<%= image_tag('/logo/keyakizaka46.png', :size => "40x50") %>
-		<% elsif micropost.logo == "" %>
+			<!-- ロゴの表示 -->
+			<% if micropost.logo == "乃木坂46" %>
+				<%= image_tag('/logo/nogizaka46.png', :size => "40x50") %>
+			<% elsif micropost.logo == "欅坂46" %>
+				<%= image_tag('/logo/keyakizaka46.png', :size => "40x50") %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-		<% end %>
+			<% end %>
 
-		<br>
+		</div>
 
-		<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=<%= micropost.artist %>『<%= micropost.livetitle %>』(<%= micropost.place %>) に参加しました。" target="_blank" >ツイート</a>
+		<div id="tweetdele">
+			<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=<%= micropost.artist %>『<%= micropost.livetitle %>』(<%= micropost.place %>) に参加しました。" target="_blank" >ツイート</a>
 
-		<%= link_to "削除", micropost, method: :delete %>
+			<%= link_to "削除", micropost, method: :delete %>
+		</div>
 		
 
 	<% end %>

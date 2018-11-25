@@ -71,11 +71,21 @@ p {
 .ticket-box {
     padding: 0.5em 1em;
     margin: 2em 0;
-    width: 400px;
+    width: 420px;
     color: #6091d3;				/*文字色*/
     background: #e4fcff;		/*背景色*/
     border: solid 2px #6091d3;	/*線*/
     border-radius: 10px;		/*角の丸み*/
+}
+
+.ticket-logo {
+	position: relative;
+	left: 330px;
+}
+
+#tweetdele {
+	position: relative;
+	top: -30px;
 }
 
 
