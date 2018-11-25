@@ -6,22 +6,44 @@ class UsersController < ApplicationController
 	def show
     	@user = User.find(params[:id])
     	@archive_year = params[:archive_year]
+    	@type = params[:type]
     	@microposts =  @user.microposts.paginate(:page => params[:page], :per_page => 5)
 
-    	# アーカイブ時
+    	# アーカイブとチケットの種類を選択
+    	if @archive_year.present? and @type.present?
+    		@microposts = @microposts.where(year: @archive_year)
+
+    		if @type == "live"
+    			@microposts = @microposts.where(teama: "")
+    		elsif @type == "sport"
+    			@microposts = @microposts.where.not(teama: "")
+    		end
+    	end
+
+    	# アーカイブ選択
     	if @archive_year.present?
     		@microposts = @microposts.where(year: @archive_year)
     	end
+
+    	# チケットの種類選択
+    	if @type.present?
+    		if @type == "live"
+    			@microposts = @microposts.where(teama: "")
+    		elsif @type == "sport"
+    			@microposts = @microposts.where.not(teama: "")
+    		end
+    	end
+
 
     	# 並び替え
     	@microposts = @microposts.order(year: "DESC")
     	@microposts = @microposts.order(month: "DESC")
     	@microposts = @microposts.order(day: "DESC")
 
-    	# Archive
+    	# アーカイブ
     	@years = []
-    	@cnt_year = []	# その年度に追加したチケットの枚数
-    	@cnt_allyear = []
+    	@cnt_year = []		# その年度に追加したチケットの枚数
+    	@cnt_allyear = []	# 全チケット数
     	@years = @user.microposts.pluck(:year)
     	@years = @years.uniq
 

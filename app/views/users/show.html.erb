@@ -1,7 +1,8 @@
 <h1>マイページ</h1>
 
-
 <% if @user.microposts.any? %>
+	<%= link_to "ライブ", user_path(type: "live") %>
+	<%= link_to "スポーツ", user_path(type: "sport") %>
 	<%= render @microposts %>
 <% end %>
 
