@@ -69,23 +69,37 @@ p {
 /* チケット */
 
 .ticket-box {
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    width: 420px;
+    padding: 5px 5px 0 5px;
+    margin: 15px 0;
+    height: 100px;
     color: #6091d3;				/*文字色*/
-    background: #e4fcff;		/*背景色*/
-    border: solid 2px #6091d3;	/*線*/
-    border-radius: 10px;		/*角の丸み*/
+    /*background: #e4fcff;		/*背景色*/
+    /*border: solid 2px #6091d3;	/*線*/
+    /*border-radius: 10px;		/*角の丸み*/
 }
 
-.ticket-logo {
+#date {
+	display: inline;
+	color: dimgray;
+}
+
+#ticket-logo {
+	display:inline;
 	position: relative;
-	left: 330px;
+	z-index: 0;
 }
 
 #tweetdele {
+	display:inline;
 	position: relative;
-	top: -30px;
+}
+
+#livetitle {
+	position: relative;
+	font-size: 23px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	z-index: 100;
 }
 
 
