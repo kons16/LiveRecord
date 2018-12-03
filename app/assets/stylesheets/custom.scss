@@ -4,7 +4,6 @@
 $gray-medium-light: #eaeaea;
 
 /* 全体 */
-
 section {
   overflow: auto;
 }
@@ -21,7 +20,6 @@ textarea {
 }
 
 /*  タイポグラフィー　*/
-
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
@@ -49,14 +47,14 @@ p {
 
 
 /* ヘッダー */
-
 .navbar{
     border-radius: 0;
     border: none;
     background-color: #003355; /* ベース基調となる濃い青 */
 }
-
-
+.navbar-default .navbar-brand {
+  color: #fff;
+}
 .navbar-default .navbar-nav >li > a{
     color: #fff;
 }
@@ -67,15 +65,17 @@ p {
 
 
 /* チケット */
-
 .ticket-box {
-    padding: 5px 5px 0 5px;
-    margin: 15px 0;
-    height: 100px;
-    color: #6091d3;				/*文字色*/
-    /*background: #e4fcff;		/*背景色*/
-    /*border: solid 2px #6091d3;	/*線*/
-    /*border-radius: 10px;		/*角の丸み*/
+  padding: 5px 5px 0 5px;
+  margin: 10px 0;
+  height: 100px;
+  width: 600px;
+  color: #6091d3;               /*文字色*/
+  border: solid 1px #000080;
+  border-radius: 8px;
+  /*background: #e4fcff;        /*背景色*/
+  /*border: solid 2px #6091d3;  /*線*/
+  /*border-radius: 10px;        /*角の丸み*/
 }
 
 #date {
@@ -91,15 +91,21 @@ p {
 
 #tweetdele {
 	display:inline;
-	position: relative;
+	position: absolute;
+  left: 700px;
 }
 
 #livetitle {
 	position: relative;
-	font-size: 23px;
+	font-size: 20px;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	z-index: 100;
+}
+
+#place {
+  position: absolute;
+  left: 230px;
 }
 
 
@@ -110,6 +116,4 @@ p {
 	right: 200px;
 	font-size: 18px;
 }
-
-
 

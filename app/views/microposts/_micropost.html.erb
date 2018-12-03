@@ -2,7 +2,7 @@
 	<!-- スポーツ観戦の場合-->
 	<% if micropost.teama != '' and micropost.teamb != '' %>
 		<div id='date'>
-			<%= micropost.year %>年<%= micropost.month %>月<%= micropost.day %>日
+			<%= micropost.year %>-<%= micropost.month %>-<%= micropost.day %>
 		</div>
 
 		<br>
@@ -60,17 +60,15 @@
 	<!-- ライブの場合-->
 	<% else %>
 		<div id='date'>
-			<%= micropost.year %>年<%= micropost.month %>月<%= micropost.day %>日
+			<%= micropost.year %>-<%= micropost.month %>-<%= micropost.day %>
 		</div>
 		<br>
 		<div id='livetitle'>
-			<%= micropost.artist %> 
-			<%= micropost.livetitle %>
 
-			<div id="ticket-logo">
+			<div id='ticket-logo'>
 				<!-- ロゴの表示 -->
 				<% if micropost.logo == "乃木坂46" %>
-					<%= image_tag('/logo/nogizaka46.png', :size => "30x40") %>
+					<%= image_tag('/logo/nogizaka46.png', :size => "40x50") %>
 				<% elsif micropost.logo == "欅坂46" %>
 					<%= image_tag('/logo/keyakizaka46.png', :size => "40x50") %>
 				<% elsif micropost.logo == "" %>
@@ -101,11 +99,17 @@
 
 				<% end %>
 			</div>
+			&emsp;
+
+			<%= micropost.artist %> 
+			<%= micropost.livetitle %>
 		</div>
 		
-		<%= micropost.place %>
+		<div id='place'>
+			<%= micropost.place %>
+		</div>
 
-		<div id="tweetdele">
+		<div id='tweetdele'>
 			<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=<%= micropost.artist %>『<%= micropost.livetitle %>』(<%= micropost.place %>) に参加しました。" target="_blank" style="text-decoration:none;" >
 				<img src='/logo/twitter.png' with='20' height='20' >
 			</a>
