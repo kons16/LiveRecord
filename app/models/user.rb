@@ -24,4 +24,13 @@ class User < ApplicationRecord
       super
     end
   end
+
+  def self.search(search)
+    if search
+      where(['username LIKE ?', "%#{search}%"])
+    else
+      where(['username LIKE ?', ""])
+    end
+  end
+
 end
