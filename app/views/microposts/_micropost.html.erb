@@ -48,14 +48,16 @@
 			<% end %>
 		</div>
 
-		<div id='tweetdele'>
-			<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=
-				<%= micropost.teama %> vs <%= micropost.teamb %> を観戦しました。(<%= micropost.place %> 結果:<%= micropost.apoint %>-<%= micropost.bpoint %>)" target="_blank" >
-			<img src='/logo/twitter.png' with='20' height='20'>
-		</a>
+		<% if current_user.id == @user.id %>
+			<div id='tweetdele'>
+				<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=
+					<%= micropost.teama %> vs <%= micropost.teamb %> を観戦しました。(<%= micropost.place %> 結果:<%= micropost.apoint %>-<%= micropost.bpoint %>)" target="_blank" >
+				<img src='/logo/twitter.png' with='20' height='20'>
+				</a>
 
-			<%= link_to image_tag('/logo/batsu.png', :size=>'20x20'), micropost, method: :delete %>
-		</div>
+				<%= link_to image_tag('/logo/batsu.png', :size=>'20x20'), micropost, method: :delete %>
+			</div>
+		<% end %>
 
 	<!-- ライブの場合-->
 	<% else %>
@@ -109,13 +111,15 @@
 			<%= micropost.place %>
 		</div>
 
-		<div id='tweetdele'>
-			<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=<%= micropost.artist %>『<%= micropost.livetitle %>』(<%= micropost.place %>) に参加しました。" target="_blank" style="text-decoration:none;" >
-				<img src='/logo/twitter.png' with='20' height='20' >
-			</a>
+		<% if current_user.id == @user.id %>
+			<div id='tweetdele'>
+				<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=<%= micropost.artist %>『<%= micropost.livetitle %>』(<%= micropost.place %>) に参加しました。" target="_blank" style="text-decoration:none;" >
+					<img src='/logo/twitter.png' with='20' height='20' >
+				</a>
 
-			<%= link_to image_tag('/logo/batsu.png', :size=>'20x20'), micropost, method: :delete %>
-		</div>
+				<%= link_to image_tag('/logo/batsu.png', :size=>'20x20'), micropost, method: :delete %>
+			</div>
+		<% end %>
 
 
 	<% end %>
