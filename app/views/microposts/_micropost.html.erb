@@ -4,48 +4,57 @@
 		<div id='date'>
 			<%= micropost.year %>-<%= micropost.month %>-<%= micropost.day %>
 		</div>
-
 		<br>
-		<%= micropost.teama %> VS <%= micropost.teamb %>
-		(<%= micropost.apoint %> - <%= micropost.bpoint %>)
-		<br>
-		<%= micropost.place %>
-		
 
-		<div id="ticket-logo">
+		<div id='livetitle'>
+			<div id="ticket-logo">
 
-			<!-- ロゴの表示 -->
-			<% if micropost.logo == "中日ドラゴンズ" %>
-				<%= image_tag('/logo/dragons.png', :size => "40x40") %>
-			<% elsif micropost.logo == "" %>
+				<!-- ロゴの表示 -->
+				<% if micropost.logo == "中日ドラゴンズ" %>
+					<%= image_tag('/logo/dragons.png', :size => "45x45") %>
+				<% elsif micropost.logo == "広島カープ" %>
+					<%= image_tag('/logo/carp.png', :size => "45x45") %>
+				<% elsif micropost.logo == "" %>
 
-			<% elsif micropost.logo == "" %>
+				<% elsif micropost.logo == "" %>
 
-			<% elsif micropost.logo == "" %>
+				<% elsif micropost.logo == "" %>
 
-			<% elsif micropost.logo == "" %>
+				<% elsif micropost.logo == "" %>
 
-			<% elsif micropost.logo == "" %>
+				<% elsif micropost.logo == "" %>
 
-			<% elsif micropost.logo == "" %>
+				<% elsif micropost.logo == "" %>
 
-			<% elsif micropost.logo == "" %>
+				<% elsif micropost.logo == "" %>
 
-			<% elsif micropost.logo == "" %>
+				<% elsif micropost.logo == "" %>
 
-			<% elsif micropost.logo == "" %>
+				<% elsif micropost.logo == "" %>
 
-			<% elsif micropost.logo == "" %>
+				<% elsif micropost.logo == "" %>
 
-			<% elsif micropost.logo == "" %>
+				<% elsif micropost.logo == "" %>
 
-			<% elsif micropost.logo == "" %>
+				<% elsif micropost.logo == "" %>
 
-			<% elsif micropost.logo == "" %>
+				<% elsif micropost.logo == "" %>
 
-			<% elsif micropost.logo == "" %>
+				<% end %>
+			</div>
+			&emsp;
 
+			<% if micropost.apoint > micropost.bpoint %>
+				<div id='winteam'><%= micropost.teama %></div> VS <%= micropost.teamb %>
+				(<%= micropost.apoint %> - <%= micropost.bpoint %>)
+			<% else %>
+				<%= micropost.teama %> VS <div id='winteam'><%= micropost.teamb %></div>
+				(<%= micropost.apoint %> - <%= micropost.bpoint %>)
 			<% end %>
+		</div>
+
+		<div id='place'>
+			<%= micropost.place %>
 		</div>
 
 		<% if current_user.id == @user.id %>

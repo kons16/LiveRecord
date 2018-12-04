@@ -108,6 +108,11 @@ p {
   left: 230px;
 }
 
+#winteam {	/* 勝利チームは赤色にする */
+	display:inline;
+	color: red;
+}
+
 
 /* マイページの要素 */
 .archive {
