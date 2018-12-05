@@ -7,6 +7,7 @@ class UsersController < ApplicationController
 	def show
     	@user = User.find(params[:id])
     	@archive_year = params[:archive_year]
+    	@artist_select = params[:artist_select]
     	@type = params[:type]
     	@microposts =  @user.microposts.paginate(:page => params[:page], :per_page => 5)
 
@@ -26,6 +27,11 @@ class UsersController < ApplicationController
     		@microposts = @microposts.where(year: @archive_year)
     	end
 
+    	# アーティスト選択
+    	if @artist_select.present?
+    		@microposts = @microposts.where(artist: @artist_select)
+    	end
+
     	# チケットの種類選択
     	if @type.present?
     		if @type == "live"
@@ -34,6 +40,15 @@ class UsersController < ApplicationController
     			@microposts = @microposts.where.not(teama: "")
     		end
     	end
+
+    	# アーティスト別回数
+    	@artists = []
+    	@cnt_artist = []
+    	@artists = @user.microposts.pluck(:artist)
+    	@artists = @artists.uniq
+    	@artists.delete_at(-1)
+
+    	@artists.each { |artist| @cnt_artist.push(@user.microposts.where(artist: artist).count) }
 
 
     	# 並び替え
