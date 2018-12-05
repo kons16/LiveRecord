@@ -5,44 +5,44 @@ $gray-medium-light: #eaeaea;
 
 /* 全体 */
 section {
-  overflow: auto;
+	overflow: auto;
 }
 
 textarea {
-  resize: vertical;
+	resize: vertical;
 }
 
 .center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
+	text-align: center;
+	h1 {
+		margin-bottom: 10px;
+	}
 }
 
 /*  タイポグラフィー　*/
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+	line-height: 1;
 }
 
 h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
+	font-size: 3em;
+	letter-spacing: -2px;
+	margin-bottom: 30px;
+	text-align: center;
 }
 
 h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: $gray-light;
+	font-size: 1.2em;
+	letter-spacing: -1px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: normal;
+	color: $gray-light;
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.7em;
+	font-size: 1.1em;
+	line-height: 1.7em;
 }
 
 
@@ -53,7 +53,7 @@ p {
     background-color: #003355; /* ベース基調となる濃い青 */
 }
 .navbar-default .navbar-brand {
-  color: #fff;
+	color: #fff;
 }
 .navbar-default .navbar-nav >li > a{
     color: #fff;
@@ -63,19 +63,43 @@ p {
     color: #aaa;
 }
 
+/* ページ要素 */
+#page_back {
+	padding: 30px 10px 10px 15px;
+	margin: 10px 0;
+	height: 800px;
+	width: 1200px;
+	border-radius: 8px;
+	background: #dfecec;        /* 背景色 */
+	border-radius: 10px;        /* 角の丸み */
+}
+
+#follow_block {
+	position: absolute;
+	top: 200px;
+	right: 170px;
+	padding: 10px 10px 0 20px;
+	margin: 10px 0;
+	height: 100px;
+	width: 200px;
+	color: #6091d3;             /*文字色*/
+	border: solid 1px #000080;
+	border-radius: 8px;
+	background: #fff;       	/*背景色*/
+}
 
 /* チケット */
 .ticket-box {
-  padding: 5px 5px 0 5px;
-  margin: 10px 0;
-  height: 100px;
-  width: 600px;
-  color: #6091d3;               /*文字色*/
-  border: solid 1px #000080;
-  border-radius: 8px;
-  /*background: #e4fcff;        /*背景色*/
-  /*border: solid 2px #6091d3;  /*線*/
-  /*border-radius: 10px;        /*角の丸み*/
+	padding: 5px 5px 0 5px;
+	margin: 10px 0;
+	height: 100px;
+	width: 600px;
+	color: #6091d3;               /*文字色*/
+	border: solid 1px #000080;
+	border-radius: 8px;
+	background: #efffff;        /*背景色*/
+	/*border: solid 2px #6091d3;  /*線*/
+	/*border-radius: 10px;        /*角の丸み*/
 }
 
 #date {
@@ -92,7 +116,7 @@ p {
 #tweetdele {
 	display:inline;
 	position: absolute;
-  left: 700px;
+	left: 720px;
 }
 
 #livetitle {
@@ -104,8 +128,8 @@ p {
 }
 
 #place {
-  position: absolute;
-  left: 230px;
+	position: absolute;
+	left: 230px;
 }
 
 #winteam {	/* 勝利チームは赤色にする */
@@ -117,15 +141,12 @@ p {
 /* マイページの要素 */
 .archive {
 	position: absolute;
-	top: 300px;
+	top: 340px;
 	right: 200px;
 	font-size: 18px;
 }
 
 .stats {
-	position: relative;
-	top: -410px;
-	left: 940px;
 	overflow: auto;
 	margin-top: 0;
 	padding: 0;
@@ -149,17 +170,24 @@ p {
 }
 
 .user_avatars {
-  overflow: auto;
-  margin-top: 10px;
-  .gravatar {
-    margin: 1px 1px;
-  }
-  a {
-    padding: 0;
-  }
+	overflow: auto;
+	margin-top: 10px;
+	.gravatar {
+		margin: 1px 1px;
+	}
+	a {
+		padding: 0;
+	}
 }
 
 .users.follow {
   padding: 0;
 }
+
+#follow_form {
+	position: absolute;
+	top: 55px;
+	right: 50px;
+}
+
 
