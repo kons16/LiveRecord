@@ -93,7 +93,7 @@ p {
 	padding: 5px 5px 0 5px;
 	margin: 10px 0;
 	height: 100px;
-	width: 600px;
+	width: 630px;
 	color: #6091d3;               /*文字色*/
 	border: solid 1px #000080;
 	border-radius: 8px;
@@ -116,7 +116,7 @@ p {
 #tweetdele {
 	display:inline;
 	position: absolute;
-	left: 720px;
+	left: 750px;
 }
 
 #livetitle {
@@ -139,17 +139,24 @@ p {
 
 
 /* マイページの要素 */
-.archive {
+.bar_archive {
 	position: absolute;
 	top: 340px;
 	right: 270px;
 	font-size: 18px;
 }
 
-.artist {
+.bar_artist {
 	position: absolute;
 	top: 480px;
 	right: 200px;
+	font-size: 18px;
+}
+
+.bar_place {
+	position: absolute;
+	top: 600px;
+	right: 190px;
 	font-size: 18px;
 }
 

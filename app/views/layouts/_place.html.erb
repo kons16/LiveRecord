@@ -1,0 +1,9 @@
+<div class='bar_place'>
+	会場別回数
+	<br>
+
+	<% @places.zip(@cnt_place).each do |place,cnt| %>
+		<%= link_to "#{place} (#{cnt})", user_path(@user.id, place_select: place) %>
+		<br>
+	<% end %>
+</div>

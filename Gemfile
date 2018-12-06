@@ -17,6 +17,8 @@ gem 'dotenv-rails'
 gem 'will_paginate'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 
 
 # Use CoffeeScript for .coffee assets and views

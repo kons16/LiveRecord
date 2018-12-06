@@ -8,8 +8,9 @@ class UsersController < ApplicationController
     	@user = User.find(params[:id])
     	@archive_year = params[:archive_year]
     	@artist_select = params[:artist_select]
+    	@place_select = params[:place_select]
     	@type = params[:type]
-    	@microposts =  @user.microposts.paginate(:page => params[:page], :per_page => 5)
+    	@microposts =  @user.microposts.paginate(:page => params[:page], :per_page => 6)
 
     	# アーカイブとチケットの種類を選択
     	if @archive_year.present? and @type.present?
@@ -32,6 +33,11 @@ class UsersController < ApplicationController
     		@microposts = @microposts.where(artist: @artist_select)
     	end
 
+    	# 会場選択
+    	if @place_select.present?
+    		@microposts = @microposts.where(place: @place_select)
+    	end
+
     	# チケットの種類選択
     	if @type.present?
     		if @type == "live"
@@ -44,27 +50,28 @@ class UsersController < ApplicationController
     	# アーティスト別回数
     	@artists = []
     	@cnt_artist = []
-    	@artists = @user.microposts.pluck(:artist)
-    	@artists = @artists.uniq
-    	@artists.delete_at(-1)
-
+    	@artists = @user.microposts.where(teama: '').pluck(:artist).uniq	# スポーツではないチケットのアーティストを取得
     	@artists.each { |artist| @cnt_artist.push(@user.microposts.where(artist: artist).count) }
 
+    	# 会場別回数
+    	@places = []
+    	@cnt_place = []
+    	@places = @user.microposts.pluck(:place).uniq
+		@places.each { |place| @cnt_place.push(@user.microposts.where(place: place).count) }    	
 
-    	# 並び替え
-    	@microposts = @microposts.order(year: "DESC")
-    	@microposts = @microposts.order(month: "DESC")
-    	@microposts = @microposts.order(day: "DESC")
 
     	# アーカイブ
     	@years = []
     	@cnt_year = []		# その年度に追加したチケットの枚数
     	@cnt_allyear = []	# 全チケット数
-    	@years = @user.microposts.pluck(:year)
-    	@years = @years.uniq
-
+    	@years = @user.microposts.pluck(:year).uniq
     	@years.each { |year| @cnt_year.push(@user.microposts.where(year: year).count) }
     	@cnt_allyear = @user.microposts.count
+
+    	# 並び替え
+    	@microposts = @microposts.order(year: "DESC")
+    	@microposts = @microposts.order(month: "DESC")
+    	@microposts = @microposts.order(day: "DESC")
 
 	end
 
