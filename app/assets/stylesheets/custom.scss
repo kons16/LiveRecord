@@ -65,7 +65,7 @@ p {
 
 /* ページ要素 */
 #page_back {
-	padding: 30px 10px 10px 15px;
+	padding: 15px 10px 10px 15px;
 	margin: 10px 0;
 	height: 800px;
 	width: 1200px;
@@ -75,11 +75,7 @@ p {
 }
 
 #follow_block {
-	position: absolute;
-	top: 200px;
-	right: 170px;
 	padding: 10px 10px 0 20px;
-	margin: 10px 0;
 	height: 100px;
 	width: 200px;
 	color: #6091d3;             /*文字色*/
@@ -139,24 +135,24 @@ p {
 
 
 /* マイページの要素 */
-.bar_archive {
+#bar {
 	position: absolute;
-	top: 340px;
-	right: 270px;
+	top: 205px;
+	right: 250px;
+}
+
+#bar_archive {
+	padding-top: 30px;
 	font-size: 18px;
 }
 
-.bar_artist {
-	position: absolute;
-	top: 480px;
-	right: 200px;
+#bar_artist {
+	padding-top: 30px;
 	font-size: 18px;
 }
 
-.bar_place {
-	position: absolute;
-	top: 600px;
-	right: 190px;
+#bar_place {
+	padding-top: 30px;
 	font-size: 18px;
 }
 

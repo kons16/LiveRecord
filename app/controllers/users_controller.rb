@@ -57,21 +57,20 @@ class UsersController < ApplicationController
     	@places = []
     	@cnt_place = []
     	@places = @user.microposts.pluck(:place).uniq
-		@places.each { |place| @cnt_place.push(@user.microposts.where(place: place).count) }    	
-
+		@places.each { |place| 
+			@cnt_place.push(@user.microposts.where(place: place).count).sort!.reverse! } 	
 
     	# アーカイブ
     	@years = []
     	@cnt_year = []		# その年度に追加したチケットの枚数
     	@cnt_allyear = []	# 全チケット数
-    	@years = @user.microposts.pluck(:year).uniq
-    	@years.each { |year| @cnt_year.push(@user.microposts.where(year: year).count) }
+    	@years = @user.microposts.pluck(:year).uniq.sort!.reverse!	# 重複年を削除し降順にソート
+    	@years.each { |year| 
+    		@cnt_year.push(@user.microposts.where(year: year).count).sort!.reverse! }
     	@cnt_allyear = @user.microposts.count
 
     	# 並び替え
-    	@microposts = @microposts.order(year: "DESC")
-    	@microposts = @microposts.order(month: "DESC")
-    	@microposts = @microposts.order(day: "DESC")
+    	@microposts = @microposts.order(year: "DESC").order(month: "DESC").order(day: "DESC")
 
 	end
 

@@ -9,21 +9,25 @@
 		<%= render @microposts %>
 	<% end %>
 
-	<div class='pagecon'><%= will_paginate @microposts, renderer: BootstrapPagination::Rails,  previous_label: '&#8592; &nbsp;前', next_label: '次 &#8594;',
-    		inner_window: 1, outer_window: 0 %></div>
+	<div class='pagecon'>
+		<%= will_paginate @microposts, renderer: BootstrapPagination::Rails,  previous_label: '&#8592; &nbsp;前', next_label: '次 &#8594;',
+    		inner_window: 1, outer_window: 0 %>
+    </div>
 
 
-	<div id='follow_block'>
-		<%= render 'layouts/stats' %>
-		<% if current_user.id != @user.id %>
-			<%= render 'follow_form' %>
-		<% end %>
+    <div id='bar'>
+		<div id='follow_block'>
+			<%= render 'layouts/stats' %>
+			<% if current_user.id != @user.id %>
+				<%= render 'follow_form' %>
+			<% end %>
+		</div>
+
+		<%= render 'layouts/archive' %>
+
+		<%= render 'layouts/artist' %>
+
+		<%= render 'layouts/place' %>
 	</div>
-
-	<%= render 'layouts/archive' %>
-
-	<%= render 'layouts/artist' %>
-
-	<%= render 'layouts/place' %>
 
 </div>
