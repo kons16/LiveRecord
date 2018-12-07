@@ -5,45 +5,44 @@
 			<%= micropost.year %>-<%= micropost.month %>-<%= micropost.day %>
 		</div>
 		<br>
+		
+		<div id="ticket-logo">
 
-		<div id='livetitle'>
-			<div id="ticket-logo">
+			<!-- ロゴの表示 -->
+			<% if micropost.logo == "中日ドラゴンズ" %>
+				<%= image_tag('/logo/dragons.png', :size => "45x45") %>
+			<% elsif micropost.logo == "広島カープ" %>
+				<%= image_tag('/logo/carp.png', :size => "45x45") %>
+			<% elsif micropost.logo == "" %>
 
-				<!-- ロゴの表示 -->
-				<% if micropost.logo == "中日ドラゴンズ" %>
-					<%= image_tag('/logo/dragons.png', :size => "45x45") %>
-				<% elsif micropost.logo == "広島カープ" %>
-					<%= image_tag('/logo/carp.png', :size => "45x45") %>
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
-
-				<% end %>
-			</div>
-			&emsp;
-
+			<% end %>
+		</div>
+		
+		<div id='artist_title'>
 			<% if micropost.apoint > micropost.bpoint %>
 				<div id='winteam'><%= micropost.teama %></div> VS <%= micropost.teamb %>
 				(<%= micropost.apoint %> - <%= micropost.bpoint %>)
@@ -74,44 +73,43 @@
 			<%= micropost.year %>-<%= micropost.month %>-<%= micropost.day %>
 		</div>
 		<br>
-		<div id='livetitle'>
 
-			<div id='ticket-logo'>
-				<!-- ロゴの表示 -->
-				<% if micropost.logo == "乃木坂46" %>
-					<%= image_tag('/logo/nogizaka46.png', :size => "40x50") %>
-				<% elsif micropost.logo == "欅坂46" %>
-					<%= image_tag('/logo/keyakizaka46.png', :size => "40x50") %>
-				<% elsif micropost.logo == "" %>
+		<div id='ticket-logo'>
+			<!-- ロゴの表示 -->
+			<% if micropost.logo == "乃木坂46" %>
+				<%= image_tag('/logo/nogizaka46.png', :size => "40x50") %>
+			<% elsif micropost.logo == "欅坂46" %>
+				<%= image_tag('/logo/keyakizaka46.png', :size => "40x50") %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% elsif micropost.logo == "" %>
+			<% elsif micropost.logo == "" %>
 
-				<% end %>
-			</div>
-			&emsp;
-
+			<% end %>
+		</div>
+		
+		<div id='artist_title'>
 			<%= micropost.artist %> 
 			<%= micropost.livetitle %>
 		</div>
