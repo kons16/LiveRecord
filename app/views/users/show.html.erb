@@ -1,5 +1,3 @@
-<h1><%= @user.username %></h1>
-
 <div id='page_back'>
 
 	<% if @user.microposts.any? %>
@@ -14,6 +12,9 @@
 			inner_window: 1, outer_window: 0 %>
 	</div>
 
+	<div id='name'>
+		<%= @user.username %>
+	</div>
 
 	<div id='bar'>
 		<div id='follow_block'>

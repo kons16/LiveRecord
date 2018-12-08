@@ -84,11 +84,18 @@ p {
 	background: #fff;       	/*背景色*/
 }
 
+#name {
+	position: absolute;
+	top: 120px;
+	right: 400px;
+	font-size: 20px;
+}
+
 /* チケット */
 .ticket-box {
 	padding: 5px 50px 10px 5px;
 	margin: 10px 0;
-	height: 100px;
+	height: 90px;
 	width: 630px;
 	color: #6091d3;               /*文字色*/
 	border: solid 1px #000080;
@@ -114,13 +121,14 @@ p {
 #tweetdele {
 	position: absolute;
 	margin-left: 580px;
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
 #artist_title {
 	position: absolute;
 	left: 240px;
 	font-size: 20px;
+	font-weight: bold;
 	z-index: 100;
 }
 
@@ -140,7 +148,7 @@ p {
 /* マイページの要素 */
 #bar {
 	position: absolute;
-	top: 205px;
+	top: 150px;
 	right: 250px;
 }
 
@@ -194,7 +202,7 @@ p {
 }
 
 .users.follow {
-  padding: 0;
+	padding: 0;
 }
 
 #follow_form {
@@ -203,4 +211,39 @@ p {
 	right: 50px;
 }
 
+
+/* 検索フォーム */
+.sform {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.sbox {
+	outline: 0;
+	height: 40px;
+	padding: 0 10px;
+	max-width: 270px;
+	border-radius: 2px;
+	background: #eee;
+}
+
+.sbtn {
+	width: 70px;
+	height: 40px;
+	border-radius: 2px;
+	background: #7fbfff;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	border: none;
+}
+
+.sbtn:hover{
+	background: #eee;
+	color: #7fbfff;
+}
+
+#skekka {
+	font-size: 25px;
+}
 
