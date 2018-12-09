@@ -1,18 +1,20 @@
-<div id='page_back'>
+<body class='search_user'>
+	<div id='search_page_back'>
 
-	<center>
-		<%= form_tag(users_path, :method => 'get', :class => 'sform') do %>
-			<%= text_field_tag :search, '', placeholder: 'ユーザー名を入力', class:'sbox', autocomplete: 'off' %>
-			<%= submit_tag 'Search', :name => nil, :class => 'sbtn' %>
-		<% end %>
-
-		<ul>
-			<% @users.each do |user| %>
-				<div id='skekka'>
-					<%= link_to user.username, user %>
-				</div>
+		<center>
+			<%= form_tag(users_path, :method => 'get', :class => 'sform') do %>
+				<%= text_field_tag :search, '', placeholder: 'ユーザー名を入力', class:'sbox', autocomplete: 'off' %>
+				<%= submit_tag 'Search', :name => nil, :class => 'sbtn' %>
 			<% end %>
-		</ul>
-	</center>
 
-</div>
+			<ul>
+				<% @users.each do |user| %>
+					<div id='skekka'>
+						<%= link_to user.username, user %>
+					</div>
+				<% end %>
+			</ul>
+		</center>
+
+	</div>
+</body>

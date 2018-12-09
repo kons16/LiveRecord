@@ -213,6 +213,34 @@ p {
 
 
 /* 検索フォーム */
+.search_user {
+	background: url(/images/live.jpg) no-repeat;
+	background-size: cover;
+	z-index: 0;
+}
+
+#search_page_back {
+	padding: 15px 10px 10px 15px;
+	margin: 10px 0;
+	height: 800px;
+	width: 1200px;
+	border-radius: 8px;
+	background: rgba(0,0,0,0.8);
+	border-radius: 10px;
+}
+
+.seach_user::before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	bottom: -5px;
+	left: -5px;
+	right: -5px;
+	background: inherit;
+	filter: blur(5px);
+	z-index: -1;
+}
+
 .sform {
 	position: relative;
 	margin-bottom: 30px;
@@ -244,7 +272,7 @@ p {
 }
 
 #skekka {
-	font-size: 25px;
+	font-size: 40px;
 }
 
 
@@ -252,7 +280,7 @@ p {
 .addticket {
 	background: url(/images/tokyodome1.jpg) no-repeat;
 	background-size: cover;
-  	z-index: 0;
+	z-index: 0;
 }
 
 .addticket::before {
@@ -266,4 +294,14 @@ p {
 	filter: blur(5px);
 	/* position:absoluteのせいで最前面に来てしまうため */
 	z-index: -1;
+}
+
+#f_ticket {
+	padding: 15px 10px 10px 15px;
+	margin: 10px 0;
+	height: 800px;
+	width: 1200px;
+	border-radius: 8px;
+	background: rgba(0,0,0,0.7);
+	border-radius: 10px;
 }
