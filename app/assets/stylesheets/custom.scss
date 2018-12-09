@@ -219,10 +219,10 @@ p {
 }
 
 .sbox {
-	outline: 0;
 	height: 40px;
 	padding: 0 10px;
-	max-width: 270px;
+	width: 270px;
+	border: solid 1px #003355;
 	border-radius: 2px;
 	background: #eee;
 }
@@ -247,3 +247,23 @@ p {
 	font-size: 25px;
 }
 
+
+/* チケットを追加 */
+.addticket {
+	background: url(/images/tokyodome1.jpg) no-repeat;
+	background-size: cover;
+  	z-index: 0;
+}
+
+.addticket::before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	bottom: -5px;
+	left: -5px;
+	right: -5px;
+	background: inherit;
+	filter: blur(5px);
+	/* position:absoluteのせいで最前面に来てしまうため */
+	z-index: -1;
+}
