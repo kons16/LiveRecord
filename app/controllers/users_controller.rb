@@ -74,8 +74,15 @@ class UsersController < ApplicationController
 
 	end
 
+	# ユーザ検索
 	def index
-        @users = User.search(params[:search])
+		@search_kekka = params[:search]
+
+		if @search_kekka != ''
+			@users = User.search(@search_kekka)
+		else # 未入力で検索したとき
+			@users = []
+		end
 	end
 
 	def following

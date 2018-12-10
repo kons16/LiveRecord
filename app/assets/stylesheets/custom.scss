@@ -91,6 +91,11 @@ p {
 	font-size: 20px;
 }
 
+.pagecon {
+	position: relative;
+	left: 220px;
+}
+
 /* チケット */
 .ticket-box {
 	padding: 5px 50px 10px 5px;
@@ -146,10 +151,15 @@ p {
 
 
 /* マイページの要素 */
+.mypage{
+	background: #2b2b2b;
+}
+
 #bar {
 	position: absolute;
 	top: 150px;
-	right: 250px;
+	left: 950px;
+	width: 350px;
 }
 
 #bar_archive {
@@ -265,14 +275,18 @@ p {
 	font-size: 16px;
 	border: none;
 }
-
 .sbtn:hover{
 	background: #eee;
 	color: #7fbfff;
 }
 
-#skekka {
-	font-size: 40px;
+.userkekka {
+	font-style: italic;
+	font-size: 45px;
+}
+
+.userkekka:hover {
+	text-decoration: none;
 }
 
 
@@ -291,8 +305,7 @@ p {
 	left: -5px;
 	right: -5px;
 	background: inherit;
-	filter: blur(5px);
-	/* position:absoluteのせいで最前面に来てしまうため */
+	filter: blur(2px);
 	z-index: -1;
 }
 

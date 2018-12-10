@@ -9,9 +9,8 @@
 
 			<ul>
 				<% @users.each do |user| %>
-					<div id='skekka'>
-						<%= link_to user.username, user %>
-					</div>
+					<%= link_to user.username, user, :class => 'userkekka' %>
+					<br>
 				<% end %>
 			</ul>
 		</center>
