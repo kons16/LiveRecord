@@ -2,7 +2,7 @@
 	<B>アーティスト別</B>
 	<br>
 
-	<% @artists.zip(@cnt_artist).each do |artist,cnt| %>
+	<% @ah.each do |artist, cnt| %>
 		<%= link_to "#{artist} (#{cnt})", user_path(@user.id, artist_select: artist) %>
 		<br>
 	<% end %>

@@ -2,7 +2,7 @@
 	<B>会場別</B>
 	<br>
 
-	<% @places.zip(@cnt_place).each do |place,cnt| %>
+	<% @ph.each do |place, cnt| %>
 		<%= link_to "#{place} (#{cnt})", user_path(@user.id, place_select: place) %>
 		<br>
 	<% end %>

@@ -51,14 +51,23 @@ class UsersController < ApplicationController
     	@artists = []
     	@cnt_artist = []
     	@artists = @user.microposts.where(teama: '').pluck(:artist).uniq	# スポーツではないチケットのアーティストを取得
-    	@artists.each { |artist| @cnt_artist.push(@user.microposts.where(artist: artist).count) }
+    	@artists.each {
+    		|artist| @cnt_artist.push(@user.microposts.where(artist: artist).count) 
+    	}
+		a = [@artists, @cnt_artist].transpose
+		@ah = Hash[*a.flatten]
+		@ah = Hash[@ah.sort_by{ |_, v| -v } ]
 
     	# 会場別回数
     	@places = []
     	@cnt_place = []
-    	@places = @user.microposts.pluck(:place).uniq
+		@places = @user.microposts.pluck(:place).uniq
 		@places.each { |place| 
-			@cnt_place.push(@user.microposts.where(place: place).count).sort!.reverse! } 	
+			@cnt_place.push(@user.microposts.where(place: place).count)
+		}
+		pa = [@places, @cnt_place].transpose
+		@ph = Hash[*pa.flatten]
+		@ph = Hash[@ph.sort_by{ |_, v| -v } ]
 
     	# アーカイブ
     	@years = []
@@ -66,7 +75,8 @@ class UsersController < ApplicationController
     	@cnt_allyear = []	# 全チケット数
     	@years = @user.microposts.pluck(:year).uniq.sort!.reverse!	# 重複年を削除し降順にソート
     	@years.each { |year| 
-    		@cnt_year.push(@user.microposts.where(year: year).count).sort!.reverse! }
+    		@cnt_year.push(@user.microposts.where(year: year).count)
+    	}
     	@cnt_allyear = @user.microposts.count
 
     	# 並び替え
