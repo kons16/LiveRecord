@@ -86,9 +86,10 @@ p {
 
 #name {
 	position: absolute;
-	top: 120px;
-	right: 400px;
-	font-size: 20px;
+	top: 110px;
+	left: 950px;
+	font-size: 33px;
+	color: #5c0544;
 }
 
 .pagecon {
@@ -218,8 +219,8 @@ p {
 
 #follow_form {
 	position: absolute;
-	top: 55px;
-	right: 50px;
+	top: 60px;
+	right: 215px;
 }
 
 
@@ -319,3 +320,10 @@ p {
 	background: rgba(0,0,0,0.7);
 	border-radius: 10px;
 }
+
+
+/* フォローしているユーザーを表示 */
+.myfriend {
+	font-size: 30px;
+}
+
