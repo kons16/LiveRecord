@@ -324,6 +324,9 @@ p {
 
 /* フォローしているユーザーを表示 */
 .myfriend {
+	list-style: none;
 	font-size: 30px;
 }
-
+.myfriend:hover {
+	text-decoration: none;
+}
