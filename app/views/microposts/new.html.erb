@@ -2,9 +2,11 @@
 	<div id='f_ticket'>
 		<h2>チケット情報</h2>
 		<%= form_for(@micropost) do |f| %>
-			<%= f.text_field :year, :placeholder=>"2018", id:'year' %>
-			<%= f.text_field :month, :placeholder=>"9", id:'month '%>
-			<%= f.text_field :day, :placeholder=>"20", id:'day' %>
+			<%= f.text_field :year, :placeholder=>"2018", id:'year' %>年
+			<%= f.text_field :month, :placeholder=>"9", id:'month' %>月
+			<%= f.text_field :day, :placeholder=>"20", id:'day' %>日
+
+			<br>
 
 			<%= f.text_field :teama, :placeholder=>"中日" %>
 			<%= f.text_field :teamb, :placeholder=>"横浜" %>
@@ -69,8 +71,8 @@
 			</datalist>
 
 			<%= f.text_field :myteam, :placeholder=>"中日" %>
-			<%= f.text_field :artist, :placeholder=>"乃木坂46" %>
-			<%= f.text_field :livetitle, :placeholder=>"全国ツアー2018" %>
+			<%= f.text_field :artist, :placeholder=>"乃木坂46", id:'artist' %>
+			<%= f.text_field :livetitle, :placeholder=>"全国ツアー2018", id:'livetitle' %>
 			<%= f.text_field :logo, autocomplete: 'off', list:'logoType' %>
 			<datalist id='logoType'>
 				<option value = "中日ドラゴンズ">
