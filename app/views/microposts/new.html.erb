@@ -2,15 +2,15 @@
 	<div id='f_ticket'>
 		<h2>チケット情報</h2>
 		<%= form_for(@micropost) do |f| %>
-			<%= f.text_field :year, :placeholder=>"2018", id:'year' %>年
-			<%= f.text_field :month, :placeholder=>"9", id:'month' %>月
-			<%= f.text_field :day, :placeholder=>"20", id:'day' %>日
+			<%= f.text_field :year, :placeholder=>"2018", id:'year' %><div id='wchar'>年</div>
+			<%= f.text_field :month, :placeholder=>"9", id:'month' %><div id='wchar'>月</div>
+			<%= f.text_field :day, :placeholder=>"20", id:'day' %><div id='wchar'>日</div>
 
 			<br>
 
-			<%= f.text_field :teama, :placeholder=>"中日" %>
-			<%= f.text_field :teamb, :placeholder=>"横浜" %>
-			<%= f.text_field :place, autocomplete: 'off', list:'placeType'%>
+			<%= f.text_field :teama, :placeholder=>"中日", id:'teama' %>
+			<%= f.text_field :teamb, :placeholder=>"横浜", id:'teamb' %>
+			<%= f.text_field :place, autocomplete: 'off', list:'placeType', id:'lplace' %>
 			<datalist id='placeType'>
 				<option value = '札幌ドーム'>
 				<option value = 'Zepp Sapporo'>
@@ -83,8 +83,8 @@
 				<option value = "欅坂46">
 			</datalist>
 
-			<%= f.text_field :apoint, :placeholder=>"6" %>
-			<%= f.text_field :bpoint, :placeholder=>"3" %>
+			<%= f.text_field :apoint, :placeholder=>"6", id:'teamap' %>
+			<%= f.text_field :bpoint, :placeholder=>"3", id:'teambp' %>
 
 			<%= f.submit "新規作成" %>
 

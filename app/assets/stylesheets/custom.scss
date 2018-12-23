@@ -321,6 +321,11 @@ p {
 	border-radius: 10px;
 }
 
+#wchar {
+	display: inline;
+	color: white;
+}
+
 #year {
 	padding: 0 10px;
 	width: 70px;
@@ -331,7 +336,7 @@ p {
 }
 
 #month {
-	padding: 0 20px;
+	padding: 0 17px;
 	width: 70px;
 	height: 50px;
 	font-size: 23px;
@@ -340,7 +345,7 @@ p {
 }
 
 #day {
-	padding: 0 20px;
+	padding: 0 17px;
 	width: 70px;
 	height: 50px;
 	font-size: 23px;
@@ -349,6 +354,9 @@ p {
 }
 
 #artist {
+	position: absolute;
+	top: 310px;
+	left: 180px;
 	padding: 0 10px;
 	width: 200px;
 	height: 50px;
@@ -357,11 +365,74 @@ p {
 	border: solid 3px #52A8B8;
 }
 
-#placeType {
+#livetitle {
+	position: absolute;
 	padding: 0 10px;
-	width: 200px;
+	top: 390px;
+	left: 180px;
+	width: 330px;
 	height: 50px;
-	font-size: 23px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: solid 3px #52A8B8;	
+}
+
+#lplace {
+	position: absolute;
+	top: 460px;
+	left: 180px;
+	padding: 0 10px;
+	width: 330px;
+	height: 50px;
+	font-size: 18px;
+	border-radius: 10px;
+	border: solid 3px #52A8B8;
+}
+
+#teama {
+	position: absolute;
+	top: 310px;
+	left: 820px;
+	padding: 0 10px;
+	width: 100px;
+	height: 50px;
+	font-size: 18px;
+	border-radius: 10px;
+	border: solid 3px #52A8B8;
+}
+
+#teamb {
+	position: absolute;
+	top: 310px;
+	left: 1000px;
+	padding: 0 10px;
+	width: 100px;
+	height: 50px;
+	font-size: 18px;
+	border-radius: 10px;
+	border: solid 3px #52A8B8;
+}
+
+#teamap {
+	position: absolute;
+	top: 380px;
+	left: 840px;
+	padding: 0 10px;
+	width: 60px;
+	height: 50px;
+	font-size: 18px;
+	border-radius: 10px;
+	border: solid 3px #52A8B8;
+}
+
+#teambp {
+	position: absolute;
+	top: 380px;
+	left: 1020px;
+	padding: 0 10px;
+	width: 60px;
+	height: 50px;
+	font-size: 18px;
 	border-radius: 10px;
 	border: solid 3px #52A8B8;
 }
