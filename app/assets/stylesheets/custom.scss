@@ -103,7 +103,7 @@ p {
 	padding: 5px 5px 0px 5px;
 	margin: 10px 0;
 	width: 630px;
-	height: 105px;
+	height: 95px;
 	color: #6091d3;               /*文字色*/
 	border: solid 1px #000080;
 	border-radius: 8px;
@@ -125,19 +125,21 @@ p {
 }
 
 #tweetdele {
-	margin-top: -20px;
-	margin-left: 570px;
+	margin-top: -12px;
+	margin-left: 578px;
 	width: 50px;
 }
 
 #artist_title {
 	padding: 1px 0 20px 0;
 	margin-top: -55px;
+	margin-bottom: 5px;
 	margin-left: 60px;
 	width: 530px;
-	height: 50px;
+	height: 25px;
 	font-size: 20px;
 	font-weight: bold;
+	overflow-x: scroll;
 	z-index: 100;
 }
 
