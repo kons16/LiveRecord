@@ -100,10 +100,10 @@ p {
 
 /* チケット */
 .ticket-box {
-	padding: 5px 50px 10px 5px;
+	padding: 5px 5px 0px 5px;
 	margin: 10px 0;
-	height: 90px;
 	width: 630px;
+	height: 105px;
 	color: #6091d3;               /*文字色*/
 	border: solid 1px #000080;
 	border-radius: 8px;
@@ -113,37 +113,40 @@ p {
 }
 
 #date {
-	display: inline;
+	margin-bottom: 0px;
 	color: dimgray;
 }
 
 #ticket-logo {
-	display:inline;
-	position: absolute;
+	margin-top: -13px;
 	height: 55px;
 	width: 55px;
 	z-index: 0;
 }
 
 #tweetdele {
-	position: absolute;
-	margin-left: 580px;
-	margin-top: 40px;
+	margin-top: -20px;
+	margin-left: 570px;
+	width: 50px;
 }
 
 #artist_title {
-	position: absolute;
-	left: 240px;
+	padding: 1px 0 20px 0;
+	margin-top: -55px;
+	margin-left: 60px;
+	width: 530px;
+	height: 50px;
 	font-size: 20px;
 	font-weight: bold;
 	z-index: 100;
 }
 
 #place {
-	position: absolute;
-	padding-top: 30px;
-	padding-left: 70px;
-
+	display: inline;
+	margin-top: 0px;
+	margin-left: 65px;
+	margin-bottom: 0px;
+	width: 270px;
 }
 
 #winteam {	/* 勝利チームは赤色にする */
@@ -389,6 +392,18 @@ p {
 	border: solid 3px #52A8B8;
 }
 
+#logo {
+	position: absolute;
+	top: 530px;
+	left: 180px;
+	padding: 0 10px;
+	width: 260px;
+	height: 50px;
+	font-size: 18px;
+	border-radius: 10px;
+	border: solid 3px #52A8B8;	
+}
+
 #teama {
 	position: absolute;
 	top: 310px;
@@ -436,6 +451,22 @@ p {
 	border-radius: 10px;
 	border: solid 3px #52A8B8;
 }
+
+#newadd {
+	position: absolute;
+	top: 650px;
+	left: 600px;
+	width: 200px;
+	height: 40px;
+	border-radius: 10px;
+	background: #7fbfff;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+}
+
+
 
 /* フォローしているユーザーを表示 */
 .myfriend {

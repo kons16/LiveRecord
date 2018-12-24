@@ -70,10 +70,9 @@
 				<option value = '大分スポーツ公園総合競技場'>
 			</datalist>
 
-			<%= f.text_field :myteam, :placeholder=>"中日" %>
 			<%= f.text_field :artist, :placeholder=>"乃木坂46", id:'artist' %>
 			<%= f.text_field :livetitle, :placeholder=>"全国ツアー2018", id:'livetitle' %>
-			<%= f.text_field :logo, autocomplete: 'off', list:'logoType' %>
+			<%= f.text_field :logo, autocomplete: 'off', list:'logoType', id:'logo' %>
 			<datalist id='logoType'>
 				<option value = "中日ドラゴンズ">
 				<option value = "読売ジャイアンツ">
@@ -86,7 +85,7 @@
 			<%= f.text_field :apoint, :placeholder=>"6", id:'teamap' %>
 			<%= f.text_field :bpoint, :placeholder=>"3", id:'teambp' %>
 
-			<%= f.submit "新規作成" %>
+			<%= f.submit "新規作成", id:'newadd' %>
 
 		<% end %>
 	</div>
