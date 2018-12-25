@@ -5,44 +5,44 @@ $gray-medium-light: #eaeaea;
 
 /* 全体 */
 section {
-	overflow: auto;
+    overflow: auto;
 }
 
 textarea {
-	resize: vertical;
+    resize: vertical;
 }
 
 .center {
-	text-align: center;
-	h1 {
-		margin-bottom: 10px;
-	}
+    text-align: center;
+    h1 {
+        margin-bottom: 10px;
+    }
 }
 
 /*  タイポグラフィー　*/
 h1, h2, h3, h4, h5, h6 {
-	line-height: 1;
+    line-height: 1;
 }
 
 h1 {
-	font-size: 3em;
-	letter-spacing: -2px;
-	margin-bottom: 30px;
-	text-align: center;
+    font-size: 3em;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 h2 {
-	font-size: 1.2em;
-	letter-spacing: -1px;
-	margin-bottom: 30px;
-	text-align: center;
-	font-weight: normal;
-	color: $gray-light;
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+    color: $gray-light;
 }
 
 p {
-	font-size: 1.1em;
-	line-height: 1.7em;
+    font-size: 1.1em;
+    line-height: 1.7em;
 }
 
 
@@ -53,7 +53,7 @@ p {
     background-color: #003355; /* ベース基調となる濃い青 */
 }
 .navbar-default .navbar-brand {
-	color: #fff;
+    color: #fff;
 }
 .navbar-default .navbar-nav >li > a{
     color: #fff;
@@ -65,414 +65,414 @@ p {
 
 /* ページ要素 */
 #page_back {
-	padding: 15px 10px 10px 15px;
-	margin-right: auto;
-	margin-left: auto;
-	height: 800px;
-	width: 1200px;
-	border-radius: 8px;
-	background: #dfecec;        /* 背景色 */
-	border-radius: 10px;        /* 角の丸み */
+    padding: 15px 10px 10px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 800px;
+    width: 1200px;
+    border-radius: 8px;
+    background: #dfecec;        /* 背景色 */
+    border-radius: 10px;        /* 角の丸み */
 }
 
 #follow_block {
-	padding: 10px 10px 0 20px;
-	height: 100px;
-	width: 200px;
-	color: #6091d3;             /*文字色*/
-	border: solid 1px #000080;
-	border-radius: 8px;
-	background: #fff;       	/*背景色*/
+    padding: 10px 10px 0 20px;
+    height: 100px;
+    width: 200px;
+    color: #6091d3;             /*文字色*/
+    border: solid 1px #000080;
+    border-radius: 8px;
+    background: #fff;           /*背景色*/
 }
 
 #name {
-	position: absolute;
-	top: 110px;
-	left: 950px;
-	font-size: 33px;
-	color: #5c0544;
+    position: absolute;
+    top: 110px;
+    left: 950px;
+    font-size: 33px;
+    color: #5c0544;
 }
 
 .pagecon {
-	position: relative;
-	top: -20px;
-	left: 220px;
+    position: relative;
+    top: -20px;
+    left: 220px;
 }
 
 /* チケット */
 .ticket-box {
-	padding: 5px 5px 0px 5px;
-	margin: 10px 0;
-	width: 630px;
-	height: 95px;
-	color: #6091d3;               /*文字色*/
-	border: solid 1px #000080;
-	border-radius: 8px;
-	background: #efffff;        /*背景色*/
-	/*border: solid 2px #6091d3;  /*線*/
-	/*border-radius: 10px;        /*角の丸み*/
+    padding: 5px 5px 0px 5px;
+    margin: 10px 0;
+    width: 630px;
+    height: 95px;
+    color: #6091d3;               /*文字色*/
+    border: solid 1px #000080;
+    border-radius: 8px;
+    background: #efffff;        /*背景色*/
+    /*border: solid 2px #6091d3;  /*線*/
+    /*border-radius: 10px;        /*角の丸み*/
 }
 
 #date {
-	margin-bottom: 0px;
-	color: dimgray;
+    margin-bottom: 0px;
+    color: dimgray;
 }
 
 #ticket-logo {
-	margin-top: -13px;
-	height: 55px;
-	width: 55px;
-	z-index: 0;
+    margin-top: -13px;
+    height: 55px;
+    width: 55px;
+    z-index: 0;
 }
 
 #tweetdele {
-	margin-top: -12px;
-	margin-left: 578px;
-	width: 50px;
+    margin-top: -12px;
+    margin-left: 578px;
+    width: 50px;
 }
 
 #artist_title {
-	padding: 1px 0 20px 0;
-	margin-top: -55px;
-	margin-bottom: 5px;
-	margin-left: 60px;
-	width: 530px;
-	height: 25px;
-	font-size: 20px;
-	font-weight: bold;
-	z-index: 100;
+    padding: 1px 0 20px 0;
+    margin-top: -55px;
+    margin-bottom: 5px;
+    margin-left: 60px;
+    width: 530px;
+    height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 100;
 }
 
 #place {
-	display: inline;
-	margin-top: 0px;
-	margin-left: 65px;
-	margin-bottom: 0px;
-	width: 270px;
+    display: inline;
+    margin-top: 0px;
+    margin-left: 65px;
+    margin-bottom: 0px;
+    width: 270px;
 }
 
-#winteam {	/* 勝利チームは赤色にする */
-	display:inline;
-	color: red;
+#winteam {  /* 勝利チームは赤色にする */
+    display:inline;
+    color: red;
 }
 
 
 /* マイページの要素 */
 .mypage{
-	background: #2b2b2b;
+    background: #2b2b2b;
 }
 
 #bar {
-	position: absolute;
-	top: 150px;
-	left: 950px;
-	width: 350px;
+    position: absolute;
+    top: 150px;
+    left: 950px;
+    width: 350px;
 }
 
 #bar_archive {
-	padding-top: 30px;
-	font-size: 18px;
+    padding-top: 30px;
+    font-size: 18px;
 }
 
 #bar_artist {
-	padding-top: 30px;
-	font-size: 18px;
+    padding-top: 30px;
+    font-size: 18px;
 }
 
 #bar_place {
-	padding-top: 30px;
-	font-size: 18px;
+    padding-top: 30px;
+    font-size: 18px;
 }
 
 .stats {
-	overflow: auto;
-	margin-top: 0;
-	padding: 0;
-	a {
-		float: left;
-		padding: 0 10px;
-		border-left: 1px solid $gray-lighter;
-		color: gray;
-		&:first-child {
-			padding-left: 0;
-			border: 0;
-		}
-		&:hover {
-			text-decoration: none;
-			color: blue;
-		}
-	}
-	strong {
-		display: block;
-	}
+    overflow: auto;
+    margin-top: 0;
+    padding: 0;
+    a {
+        float: left;
+        padding: 0 10px;
+        border-left: 1px solid $gray-lighter;
+        color: gray;
+        &:first-child {
+            padding-left: 0;
+            border: 0;
+        }
+        &:hover {
+            text-decoration: none;
+            color: blue;
+        }
+    }
+    strong {
+        display: block;
+    }
 }
 
 .user_avatars {
-	overflow: auto;
-	margin-top: 10px;
-	.gravatar {
-		margin: 1px 1px;
-	}
-	a {
-		padding: 0;
-	}
+    overflow: auto;
+    margin-top: 10px;
+    .gravatar {
+        margin: 1px 1px;
+    }
+    a {
+        padding: 0;
+    }
 }
 
 .users.follow {
-	padding: 0;
+    padding: 0;
 }
 
 #follow_form {
-	position: absolute;
-	top: 60px;
-	right: 215px;
+    position: absolute;
+    top: 60px;
+    right: 215px;
 }
 
 
 /* 検索フォーム */
 .search_user {
-	background: url(/images/live.jpg) no-repeat;
-	background-size: cover;
-	z-index: 0;
+    background: url(/images/live.jpg) no-repeat;
+    background-size: cover;
+    z-index: 0;
 }
 
 #search_page_back {
-	padding: 15px 10px 10px 15px;
-	margin-right: auto;
-	margin-left: auto;
-	height: 800px;
-	width: 1200px;
-	border-radius: 8px;
-	background: rgba(0,0,0,0.8);
-	border-radius: 10px;
+    padding: 15px 10px 10px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 800px;
+    width: 1200px;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 10px;
 }
 
 .seach_user::before {
-	content: '';
-	position: absolute;
-	top: -5px;
-	bottom: -5px;
-	left: -5px;
-	right: -5px;
-	background: inherit;
-	filter: blur(5px);
-	z-index: -1;
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1;
 }
 
 .sform {
-	position: relative;
-	margin-bottom: 30px;
+    position: relative;
+    margin-bottom: 30px;
 }
 
 .sbox {
-	height: 40px;
-	padding: 0 10px;
-	width: 270px;
-	border: solid 1px #003355;
-	border-radius: 2px;
-	background: #eee;
+    height: 40px;
+    padding: 0 10px;
+    width: 270px;
+    border: solid 1px #003355;
+    border-radius: 2px;
+    background: #eee;
 }
 
 .sbtn {
-	width: 70px;
-	height: 40px;
-	border-radius: 2px;
-	background: #7fbfff;
-	color: #fff;
-	font-weight: bold;
-	font-size: 16px;
-	border: none;
+    width: 70px;
+    height: 40px;
+    border-radius: 2px;
+    background: #7fbfff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
 }
 .sbtn:hover{
-	background: #eee;
-	color: #7fbfff;
+    background: #eee;
+    color: #7fbfff;
 }
 
 .userkekka {
-	font-style: italic;
-	font-size: 45px;
+    font-style: italic;
+    font-size: 45px;
 }
 
 .userkekka:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 
 /* チケットを追加 */
 .addticket {
-	background: url(/images/tokyodome1.jpg) no-repeat;
-	background-size: cover;
-	z-index: 0;
+    background: url(/images/tokyodome1.jpg) no-repeat;
+    background-size: cover;
+    z-index: 0;
 }
 
 .addticket::before {
-	content: '';
-	position: absolute;
-	top: -5px;
-	bottom: -5px;
-	left: -5px;
-	right: -5px;
-	background: inherit;
-	filter: blur(2px);
-	z-index: -1;
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: inherit;
+    filter: blur(2px);
+    z-index: -1;
 }
 
 #f_ticket {
-	padding: 15px 10px 10px 15px;
-	margin-right: auto;
-	margin-left: auto;
-	height: 800px;
-	width: 1200px;
-	border-radius: 8px;
-	background: rgba(0,0,0,0.7);
-	border-radius: 10px;
+    padding: 15px 10px 10px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 800px;
+    width: 1200px;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
 }
 
 #wchar {
-	display: inline;
-	color: white;
+    display: inline;
+    color: white;
 }
 
 #year {
-	padding: 0 10px;
-	width: 70px;
-	height: 50px;
-	font-size: 20px;
-	border-radius: 10px;
-	border: solid 3px #52A8B8;
+    padding: 0 10px;
+    width: 70px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;
 }
 
 #month {
-	padding: 0 17px;
-	width: 70px;
-	height: 50px;
-	font-size: 23px;
-	border-radius: 10px;
-	border: solid 3px #52A8B8;
+    padding: 0 17px;
+    width: 70px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;
 }
 
 #day {
-	padding: 0 17px;
-	width: 70px;
-	height: 50px;
-	font-size: 23px;
-	border-radius: 10px;
-	border: solid 3px #52A8B8;
+    padding: 0 17px;
+    width: 70px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;
 }
 
 #artist {
-	margin-top: 80px;
-	padding: 0 10px;
-	width: 200px;
-	height: 50px;
-	font-size: 23px;
-	border-radius: 10px;
-	border: solid 3px #52A8B8;
+    margin-top: 80px;
+    padding: 0 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;
 }
 
 #livetitle {
-	padding: 0 10px;
-	margin-top: 80px;
-	width: 330px;
-	height: 50px;
-	font-size: 20px;
-	border-radius: 10px;
-	border: solid 3px #52A8B8;	
+    padding: 0 10px;
+    margin-top: 80px;
+    width: 330px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;  
 }
 
 #lplace {
-	position: absolute;
-	top: 460px;
-	left: 180px;
-	padding: 0 10px;
-	width: 330px;
-	height: 50px;
-	font-size: 18px;
-	border-radius: 10px;
-	border: solid 3px #52A8B8;
+    position: absolute;
+    top: 460px;
+    left: 180px;
+    padding: 0 10px;
+    width: 330px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;
 }
 
 #logo {
-	position: absolute;
-	top: 530px;
-	left: 180px;
-	padding: 0 10px;
-	width: 260px;
-	height: 50px;
-	font-size: 18px;
-	border-radius: 10px;
-	border: solid 3px #52A8B8;	
+    position: absolute;
+    top: 530px;
+    left: 180px;
+    padding: 0 10px;
+    width: 260px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;  
 }
 
 #teama {
-	position: absolute;
-	top: 310px;
-	left: 820px;
-	padding: 0 10px;
-	width: 100px;
-	height: 50px;
-	font-size: 18px;
-	border-radius: 10px;
-	border: solid 3px #52A8B8;
+    position: absolute;
+    top: 310px;
+    left: 820px;
+    padding: 0 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;
 }
 
 #teamb {
-	position: absolute;
-	top: 310px;
-	left: 1000px;
-	padding: 0 10px;
-	width: 100px;
-	height: 50px;
-	font-size: 18px;
-	border-radius: 10px;
-	border: solid 3px #52A8B8;
+    position: absolute;
+    top: 310px;
+    left: 1000px;
+    padding: 0 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;
 }
 
 #teamap {
-	position: absolute;
-	top: 380px;
-	left: 840px;
-	padding: 0 10px;
-	width: 60px;
-	height: 50px;
-	font-size: 18px;
-	border-radius: 10px;
-	border: solid 3px #52A8B8;
+    position: absolute;
+    top: 380px;
+    left: 840px;
+    padding: 0 10px;
+    width: 60px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;
 }
 
 #teambp {
-	position: absolute;
-	top: 380px;
-	left: 1020px;
-	padding: 0 10px;
-	width: 60px;
-	height: 50px;
-	font-size: 18px;
-	border-radius: 10px;
-	border: solid 3px #52A8B8;
+    position: absolute;
+    top: 380px;
+    left: 1020px;
+    padding: 0 10px;
+    width: 60px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;
 }
 
 #newadd {
-	position: absolute;
-	top: 650px;
-	left: 600px;
-	width: 200px;
-	height: 40px;
-	border-radius: 10px;
-	background: #7fbfff;
-	color: #fff;
-	font-weight: bold;
-	font-size: 18px;
-	border: none;
+    position: absolute;
+    top: 650px;
+    left: 600px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background: #7fbfff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
 }
 
 
 
 /* フォローしているユーザーを表示 */
 .myfriend {
-	list-style: none;
-	font-size: 30px;
+    list-style: none;
+    font-size: 30px;
 }
 .myfriend:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
