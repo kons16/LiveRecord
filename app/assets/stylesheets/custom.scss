@@ -66,7 +66,8 @@ p {
 /* ページ要素 */
 #page_back {
 	padding: 15px 10px 10px 15px;
-	margin: 10px 0;
+	margin-right: auto;
+	margin-left: auto;
 	height: 800px;
 	width: 1200px;
 	border-radius: 8px;
@@ -162,9 +163,8 @@ p {
 }
 
 #bar {
-	position: absolute;
-	top: 150px;
-	left: 950px;
+	margin-left: 770px;
+	margin-top: -490px;
 	width: 350px;
 }
 
@@ -237,7 +237,8 @@ p {
 
 #search_page_back {
 	padding: 15px 10px 10px 15px;
-	margin: 10px 0;
+	margin-right: auto;
+	margin-left: auto;
 	height: 800px;
 	width: 1200px;
 	border-radius: 8px;
@@ -317,7 +318,8 @@ p {
 
 #f_ticket {
 	padding: 15px 10px 10px 15px;
-	margin: 10px 0;
+	margin-right: auto;
+	margin-left: auto;
 	height: 800px;
 	width: 1200px;
 	border-radius: 8px;
@@ -358,9 +360,7 @@ p {
 }
 
 #artist {
-	position: absolute;
-	top: 310px;
-	left: 180px;
+	margin-top: 80px;
 	padding: 0 10px;
 	width: 200px;
 	height: 50px;
@@ -370,10 +370,8 @@ p {
 }
 
 #livetitle {
-	position: absolute;
 	padding: 0 10px;
-	top: 390px;
-	left: 180px;
+	margin-top: 80px;
 	width: 330px;
 	height: 50px;
 	font-size: 20px;
