@@ -163,8 +163,9 @@ p {
 }
 
 #bar {
-	margin-left: 770px;
-	margin-top: -490px;
+	position: absolute;
+	top: 150px;
+	left: 950px;
 	width: 350px;
 }
 
