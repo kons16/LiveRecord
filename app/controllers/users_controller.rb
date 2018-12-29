@@ -22,7 +22,7 @@ class UsersController < ApplicationController
                 @microposts = @microposts.where.not(teama: "")
             end
         end
-
+        
         # アーカイブ選択
         if @archive_year.present?
             @microposts = @microposts.where(year: @archive_year)

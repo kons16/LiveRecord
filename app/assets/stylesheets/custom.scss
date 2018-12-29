@@ -63,6 +63,47 @@ p {
     color: #aaa;
 }
 
+/* トップページ */
+#top_page_back {
+    padding: 15px 10px 10px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 650px;
+    width: 1200px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #ffffff 20%, #006bff);
+    border-radius: 10px;
+}
+
+.top_logo {
+    width: 200px;
+    height: 200px;
+}
+
+#top_title {
+    font-size: 80px;
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+    margin-top: -20px;
+}
+
+#top_detail {
+    font-size: 20px;
+    font-family: 'TsukuARdGothic-Regular',sans-serif;
+    margin-top: 50px;
+}
+
+/* 新規登録 & ログイン */
+#sign_login_page_back{
+    padding: 15px 10px 10px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 630px;
+    width: 1200px;
+    border-radius: 8px;
+    background: #dfecec;
+    border-radius: 10px;
+}
+
 /* ページ要素 */
 #page_back {
     padding: 15px 10px 10px 15px;
@@ -71,8 +112,8 @@ p {
     height: 800px;
     width: 1200px;
     border-radius: 8px;
-    background: #dfecec;        /* 背景色 */
-    border-radius: 10px;        /* 角の丸み */
+    background: #dfecec;
+    border-radius: 10px;
 }
 
 #follow_block {

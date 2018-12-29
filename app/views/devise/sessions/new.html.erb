@@ -1,26 +1,45 @@
-<h2>ログイン</h2>
+<body class='mypage'>
+    <div id='sign_login_page_back'>
+        <h1>ログイン</h1>
+        <br>
+        <center>
+            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+                <div class='form-group'>
+                    <div class='row'>
+                        <%= f.label :email %><br />
+                        <div class='col-xs-4 col-md-offset-4'>
+                            <%= f.email_field :email, autofocus: true, autocomplete: "email", :class=>'form-control'%>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class='row'>
+                        <%= f.label :password %><br />
+                        <div class='col-xs-4 col-md-offset-4'>
+                            <%= f.password_field :password, autocomplete: "current-password", :class => 'form-control' %>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+                <% if devise_mapping.rememberable? -%>
+                    <div class="field">
+                      <%= f.check_box :remember_me %>
+                      <%= f.label :remember_me %>
+                    </div>
+                <% end -%>
 
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+                <br>
+
+                <div class="actions">
+                    <%= f.submit "ログイン", :class => 'btn btn-primary col-xs-2 col-md-offset-5'%>
+                </div>
+
+            <% end %>
+        </center>
     </div>
-  <% end -%>
+</body>
 
-  <div class="actions">
-    <%= f.submit "ログイン" %>
-  </div>
-<% end %>
 
 
