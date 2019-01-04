@@ -71,7 +71,7 @@ p {
     height: 650px;
     width: 1200px;
     border-radius: 8px;
-    background: linear-gradient(to bottom, #ffffff 20%, #006bff);
+    background: linear-gradient(to bottom, #e5f1ff 36%, #69afff);
     border-radius: 10px;
 }
 
@@ -116,6 +116,21 @@ p {
     border-radius: 10px;
 }
 
+.mypage{
+    background: #a19fa0;
+}
+
+#mypage_back {
+    padding: 15px 10px 10px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 800px;
+    width: 1200px;
+    border-radius: 8px;
+    background: #eef5f6;
+    border-radius: 10px;
+}
+
 #follow_block {
     padding: 10px 10px 0 20px;
     height: 100px;
@@ -142,16 +157,15 @@ p {
 
 /* チケット */
 .ticket-box {
+    float: left;
     padding: 5px 5px 0px 5px;
-    margin: 10px 0;
+    margin: 10px 0 0 8px;
     width: 630px;
     height: 95px;
-    color: #6091d3;               /*文字色*/
+    color: #6091d3;
     border: solid 1px #000080;
     border-radius: 8px;
-    background: #efffff;        /*背景色*/
-    /*border: solid 2px #6091d3;  /*線*/
-    /*border-radius: 10px;        /*角の丸み*/
+    background: #e7fcfd;
 }
 
 #date {
@@ -199,14 +213,8 @@ p {
 
 
 /* マイページの要素 */
-.mypage{
-    background: #2b2b2b;
-}
-
 #bar {
-    position: absolute;
-    top: 150px;
-    left: 950px;
+    margin: 50px 0 0 780px;
     width: 350px;
 }
 
@@ -223,6 +231,10 @@ p {
 #bar_place {
     padding-top: 30px;
     font-size: 18px;
+}
+
+#category {
+    margin-left: 10px;
 }
 
 .stats {
@@ -284,7 +296,7 @@ p {
     height: 800px;
     width: 1200px;
     border-radius: 8px;
-    background: rgba(0,0,0,0.8);
+    background: rgba(255,255,255,0.7);
     border-radius: 10px;
 }
 
@@ -331,6 +343,7 @@ p {
 
 .userkekka {
     font-style: italic;
+    color: #d600ff;
     font-size: 45px;
 }
 
@@ -340,6 +353,22 @@ p {
 
 
 /* チケットを追加 */
+#tick_info {
+    color: white;
+}
+
+#live_info{
+    display: inline;
+    margin-left: 250px;
+    font-size: 25px;
+}
+
+#sport_info {
+    display: inline;
+    margin-left: 450px;
+    font-size: 25px;
+}
+
 .addticket {
     background: url(/images/tokyodome1.jpg) no-repeat;
     background-size: cover;
@@ -365,7 +394,7 @@ p {
     height: 800px;
     width: 1200px;
     border-radius: 8px;
-    background: rgba(0,0,0,0.7);
+    background: rgba(255,255,255,0.5);
     border-radius: 10px;
 }
 
@@ -402,7 +431,8 @@ p {
 }
 
 #artist {
-    margin-top: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
     padding: 0 10px;
     width: 200px;
     height: 50px;
@@ -413,7 +443,8 @@ p {
 
 #livetitle {
     padding: 0 10px;
-    margin-top: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
     width: 330px;
     height: 50px;
     font-size: 20px;
@@ -421,11 +452,14 @@ p {
     border: solid 3px #52A8B8;  
 }
 
-#lplace {
-    position: absolute;
-    top: 460px;
-    left: 180px;
+#add_place_box {
+    margin-left: 300px;
+}
+
+#add_place {
     padding: 0 10px;
+    margin-top: 80px;
+    margin-left: 50px;
     width: 330px;
     height: 50px;
     font-size: 18px;
@@ -433,11 +467,14 @@ p {
     border: solid 3px #52A8B8;
 }
 
+#logo_box {
+    margin-left: 300px;
+}
+
 #logo {
-    position: absolute;
-    top: 530px;
-    left: 180px;
     padding: 0 10px;
+    margin-top: 10px;
+    margin-left: 80px;
     width: 260px;
     height: 50px;
     font-size: 18px;

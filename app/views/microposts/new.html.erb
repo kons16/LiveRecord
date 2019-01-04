@@ -1,93 +1,114 @@
 <body class='addticket'>
-	<div id='f_ticket'>
-		<h2>チケット情報</h2>
-		<%= form_for(@micropost) do |f| %>
-			<%= f.text_field :year, :placeholder=>"2018", id:'year' %><div id='wchar'>年</div>
-			<%= f.text_field :month, :placeholder=>"9", id:'month' %><div id='wchar'>月</div>
-			<%= f.text_field :day, :placeholder=>"20", id:'day' %><div id='wchar'>日</div>
+    <div id='f_ticket'>
+        <h1><div id='tick_info'>チケット情報</div></h1>
+        <%= form_for(@micropost) do |f| %>
+            <center>
+                <%= f.text_field :year, :placeholder=>"2018", id:'year' %><div id='wchar'>年</div>
+                <%= f.text_field :month, :placeholder=>"9", id:'month' %><div id='wchar'>月</div>
+                <%= f.text_field :day, :placeholder=>"20", id:'day' %><div id='wchar'>日</div>
+            </center>
 
-			<br>
+            <br>
 
-			<%= f.text_field :teama, :placeholder=>"中日", id:'teama' %>
-			<%= f.text_field :teamb, :placeholder=>"横浜", id:'teamb' %>
-			<%= f.text_field :place, autocomplete: 'off', list:'placeType', id:'lplace' %>
-			<datalist id='placeType'>
-				<option value = '札幌ドーム'>
-				<option value = 'Zepp Sapporo'>
-				<option value = 'NDスタジアム山形'>
-				<option value = 'ひとめぼれスタジアム宮城'>
-				<option value = 'Koboパーク宮城'>
-				<option value = 'ユアテックスタジアム仙台'>
-				<option value = '国立競技場'>
-				<option value = '味の素スタジアム'>
-				<option value = '東京ドーム'>
-				<option value = '代々木第一体育館'>
-				<option value = '明治神宮野球場'>
-				<option value = '日本武道館'>
-				<option value = '両国国技館'>
-				<option value = '有明コロシアム'>
-				<option value = '渋谷NHKホール'>
-				<option value = 'Zepp Tokyo'>
-				<option value = 'Zepp ダイバーシティ東京'>
-				<option value = '日産スタジアム'>
-				<option value = '横浜スタジアム'>
-				<option value = '横浜アリーナ'>
-				<option value = 'パシフィコ横浜 国立大ホール'>
-				<option value = '埼玉スタジアム2002'>
-				<option value = 'さいたまスーパアリーナ'>
-				<option value = 'ヤマダグリーンドーム前橋'>
-				<option value = 'メットライフドーム'>
-				<option value = 'ZOZOマリンスタジアム'>
-				<option value = 'カシマサッカースタジアム'>
-				<option value = 'デンカビッグスワンスタジアム'>
-				<option value = '静岡エコパスタジアム'>
-				<option value = '豊田スタジアム'>
-				<option value = 'ナゴヤドーム'>
-				<option value = '日本ガイシホール'>
-				<option value = 'Zepp Nagoya'>
-				<option value = '三重県営サンアリーナ'>
-				<option value = 'ヤンマースタジアム長居'>
-				<option value = '京セラドーム大阪'>
-				<option value = '大阪城ホール'>
-				<option value = '万博記念競技場'>
-				<option value = 'Zepp なんば大阪'>
-				<option value = 'なんばHatch'>
-				<option value = 'なんばグランド花月'>
-				<option value = '阪神甲子園球場'>
-				<option value = '神戸総合運動公園 ユニバー記念競技場'>
-				<option value = 'ほっともっとフィールド神戸'>
-				<option value = 'ノエビアスタジアム神戸'>
-				<option value = '神戸ワールド記念ホール'>
-				<option value = '宝塚大劇場'>
-				<option value = 'エディオンスタジアム広島'>
-				<option value = 'MAZDA Zoom-Zoom スタジアム広島'>
-				<option value = '広島グリーンアリーナ'>
-				<option value = '坊っちゃんスタジアム'>
-				<option value = '福岡 ヤフオク!ドーム'>
-				<option value = 'マリンメッセ福岡'>
-				<option value = '福岡国際センター'>
-				<option value = 'Zepp Fukuoka'>
-				<option value = '大分スポーツ公園総合競技場'>
-			</datalist>
+            <div id='live_info'>ライブ</div>
+            <div id='sport_info'>スポーツ</div>
 
-			<%= f.text_field :artist, :placeholder=>"乃木坂46", id:'artist' %>
-			<%= f.text_field :livetitle, :placeholder=>"全国ツアー2018", id:'livetitle' %>
-			<%= f.text_field :logo, autocomplete: 'off', list:'logoType', id:'logo' %>
-			<datalist id='logoType'>
-				<option value = "中日ドラゴンズ">
-				<option value = "読売ジャイアンツ">
-				<option value = "阪神タイガース">
-				<option value = "広島カープ">
-				<option value = "乃木坂46">
-				<option value = "欅坂46">
-			</datalist>
+            <%= f.text_field :teama, :placeholder=>"中日", id:'teama' %>
+            <%= f.text_field :teamb, :placeholder=>"横浜", id:'teamb' %>
 
-			<%= f.text_field :apoint, :placeholder=>"6", id:'teamap' %>
-			<%= f.text_field :bpoint, :placeholder=>"3", id:'teambp' %>
+            <%= f.text_field :apoint, :placeholder=>"6", id:'teamap' %>
+            <%= f.text_field :bpoint, :placeholder=>"3", id:'teambp' %>
 
-			<%= f.submit "新規作成", id:'newadd' %>
 
-		<% end %>
-	</div>
+            <div id='artist_box'>
+                アーティスト名
+                <%= f.text_field :artist, :placeholder=>"乃木坂46", id:'artist' %>
+            </div>
+
+            <div id='livetitle_box'>
+                ライブタイトル
+                <%= f.text_field :livetitle, :placeholder=>"全国ツアー2018", id:'livetitle' %>
+            </div>
+
+            <div id='add_place_box'>
+                開催場所
+                <%= f.text_field :place, autocomplete: 'off', list:'placeType', id:'add_place' %>
+                <datalist id='placeType'>
+                    <option value = '札幌ドーム'>
+                    <option value = 'Zepp Sapporo'>
+                    <option value = 'NDスタジアム山形'>
+                    <option value = 'ひとめぼれスタジアム宮城'>
+                    <option value = 'Koboパーク宮城'>
+                    <option value = 'ユアテックスタジアム仙台'>
+                    <option value = '国立競技場'>
+                    <option value = '味の素スタジアム'>
+                    <option value = '東京ドーム'>
+                    <option value = '代々木第一体育館'>
+                    <option value = '明治神宮野球場'>
+                    <option value = '日本武道館'>
+                    <option value = '両国国技館'>
+                    <option value = '有明コロシアム'>
+                    <option value = '渋谷NHKホール'>
+                    <option value = 'Zepp Tokyo'>
+                    <option value = 'Zepp ダイバーシティ東京'>
+                    <option value = '日産スタジアム'>
+                    <option value = '横浜スタジアム'>
+                    <option value = '横浜アリーナ'>
+                    <option value = 'パシフィコ横浜 国立大ホール'>
+                    <option value = '埼玉スタジアム2002'>
+                    <option value = 'さいたまスーパアリーナ'>
+                    <option value = 'ヤマダグリーンドーム前橋'>
+                    <option value = 'メットライフドーム'>
+                    <option value = 'ZOZOマリンスタジアム'>
+                    <option value = 'カシマサッカースタジアム'>
+                    <option value = 'デンカビッグスワンスタジアム'>
+                    <option value = '静岡エコパスタジアム'>
+                    <option value = '豊田スタジアム'>
+                    <option value = 'ナゴヤドーム'>
+                    <option value = '日本ガイシホール'>
+                    <option value = 'Zepp Nagoya'>
+                    <option value = '三重県営サンアリーナ'>
+                    <option value = 'ヤンマースタジアム長居'>
+                    <option value = '京セラドーム大阪'>
+                    <option value = '大阪城ホール'>
+                    <option value = '万博記念競技場'>
+                    <option value = 'Zepp なんば大阪'>
+                    <option value = 'なんばHatch'>
+                    <option value = 'なんばグランド花月'>
+                    <option value = '阪神甲子園球場'>
+                    <option value = '神戸総合運動公園 ユニバー記念競技場'>
+                    <option value = 'ほっともっとフィールド神戸'>
+                    <option value = 'ノエビアスタジアム神戸'>
+                    <option value = '神戸ワールド記念ホール'>
+                    <option value = '宝塚大劇場'>
+                    <option value = 'エディオンスタジアム広島'>
+                    <option value = 'MAZDA Zoom-Zoom スタジアム広島'>
+                    <option value = '広島グリーンアリーナ'>
+                    <option value = '坊っちゃんスタジアム'>
+                    <option value = '福岡 ヤフオク!ドーム'>
+                    <option value = 'マリンメッセ福岡'>
+                    <option value = '福岡国際センター'>
+                    <option value = 'Zepp Fukuoka'>
+                    <option value = '大分スポーツ公園総合競技場'>
+                </datalist>
+            </div>
+
+            <div id='logo_box'>
+                ロゴ
+                <%= f.text_field :logo, autocomplete: 'off', list:'logoType', id:'logo' %>
+                <datalist id='logoType'>
+                    <option value = "中日ドラゴンズ">
+                    <option value = "読売ジャイアンツ">
+                    <option value = "阪神タイガース">
+                    <option value = "広島カープ">
+                    <option value = "乃木坂46">
+                    <option value = "欅坂46">
+                </datalist>
+            </option>
+
+            <%= f.submit "新規作成", id:'newadd' %>
+
+        <% end %>
+    </div>
 </body>
 

@@ -1,36 +1,38 @@
 <body class='mypage'>
-	<div id='page_back'>
+    <div id='mypage_back'>
 
-		<% if @user.microposts.any? %>
-			<%= link_to "All", user_path %> / 
-			<%= link_to "ライブ", user_path(type: "live") %> / 
-			<%= link_to "スポーツ", user_path(type: "sport") %>
-			<%= render @microposts %>
-		<% end %>
+        <% if @user.microposts.any? %>
+            <div id='category'>
+                <%= link_to "All", user_path %> / 
+                <%= link_to "ライブ", user_path(type: "live") %> / 
+                <%= link_to "スポーツ", user_path(type: "sport") %>
+            </div>
+            <%= render @microposts %>
+        <% end %>
 
-		<div class='pagecon'>
-			<%= will_paginate @microposts, renderer: BootstrapPagination::Rails,  previous_label: '&#8592; &nbsp;前', next_label: '次 &#8594;',
-				inner_window: 1, outer_window: 0 %>
-		</div>
+        <div class='pagecon'>
+            <%= will_paginate @microposts, renderer: BootstrapPagination::Rails,  previous_label: '&#8592; &nbsp;前', next_label: '次 &#8594;',
+                inner_window: 1, outer_window: 0 %>
+        </div>
 
-		<div id='name'>
-			<%= @user.username %>
-		</div>
+        <div id='name'>
+            <%= @user.username %>
+        </div>
 
-		<div id='bar'>
-			<div id='follow_block'>
-				<%= render 'layouts/stats' %>
-				<% if current_user.id != @user.id %>
-					<%= render 'follow_form' %>
-				<% end %>
-			</div>
+        <div id='bar'>
+            <div id='follow_block'>
+                <%= render 'layouts/stats' %>
+                <% if current_user.id != @user.id %>
+                    <%= render 'follow_form' %>
+                <% end %>
+            </div>
 
-			<%= render 'layouts/archive' %>
+            <%= render 'layouts/archive' %>
 
-			<%= render 'layouts/artist' %>
+            <%= render 'layouts/artist' %>
 
-			<%= render 'layouts/place' %>
-		</div>
+            <%= render 'layouts/place' %>
+        </div>
 
-	</div>
+    </div>
 </body>
