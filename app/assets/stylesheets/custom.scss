@@ -354,20 +354,23 @@ p {
 /* チケットを追加 */
 #tick_info {
     color: white;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 #live_info{
     display: inline;
     margin-left: 250px;
-    color: orange;
+    color: #2f32ff;
     font-size: 25px;
 }
 
 #sport_info {
     display: inline;
     margin-left: 520px;
-    color: orange;
+    color: #2f32ff;
     font-size: 25px;
+
 }
 
 .addticket {
@@ -395,7 +398,7 @@ p {
     height: 800px;
     width: 1200px;
     border-radius: 8px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.7);
     border-radius: 10px;
 }
 
@@ -433,7 +436,8 @@ p {
 
 #artist_info{
     display: inline;
-    color: orange;
+    color: #bf6a00;
+    font-weight: bold;
 }
 
 #artist {
@@ -449,7 +453,8 @@ p {
 
 #livetitle_info{
     display: inline;
-    color: orange;
+    color: #bf6a00;
+    font-weight: bold;
 }
 
 #livetitle {
@@ -515,7 +520,8 @@ p {
 
 #place_info {
     display: inline;
-    color: red;
+    color: #bf6a00;
+    font-weight: bold;
 }
 
 #add_place_box {
@@ -535,7 +541,8 @@ p {
 
 #logo_info {
     display: inline;
-    color: red;    
+    color: #bf6a00;
+    font-weight: bold;  
 }
 
 #logo_box {
