@@ -135,10 +135,14 @@ p {
     padding: 10px 10px 0 20px;
     height: 100px;
     width: 200px;
-    color: #6091d3;             /*文字色*/
+    color: #6091d3;
     border: solid 1px #000080;
     border-radius: 8px;
-    background: #fff;           /*背景色*/
+}
+
+#follow_unfollow_btn {
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 #name {
@@ -275,12 +279,6 @@ p {
     padding: 0;
 }
 
-#follow_form {
-    position: absolute;
-    top: 60px;
-    right: 215px;
-}
-
 
 /* 検索フォーム */
 .search_user {
@@ -327,10 +325,11 @@ p {
 }
 
 .sbtn {
+    margin-left: 5px;
     width: 70px;
     height: 40px;
     border-radius: 2px;
-    background: #7fbfff;
+    background: blue;
     color: #fff;
     font-weight: bold;
     font-size: 16px;
@@ -360,12 +359,14 @@ p {
 #live_info{
     display: inline;
     margin-left: 250px;
+    color: orange;
     font-size: 25px;
 }
 
 #sport_info {
     display: inline;
-    margin-left: 450px;
+    margin-left: 520px;
+    color: orange;
     font-size: 25px;
 }
 
@@ -430,6 +431,11 @@ p {
     border: solid 3px #52A8B8;
 }
 
+#artist_info{
+    display: inline;
+    color: orange;
+}
+
 #artist {
     margin-top: 10px;
     margin-left: 10px;
@@ -441,6 +447,11 @@ p {
     border: solid 3px #52A8B8;
 }
 
+#livetitle_info{
+    display: inline;
+    color: orange;
+}
+
 #livetitle {
     padding: 0 10px;
     margin-top: 10px;
@@ -450,6 +461,61 @@ p {
     font-size: 20px;
     border-radius: 10px;
     border: solid 3px #52A8B8;  
+}
+
+#team_box {
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+#teama {
+    margin-right: 30px;
+    padding: 0 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;
+}
+
+#teamb {
+    padding: 0 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;
+}
+
+#team_point_box {
+    float: right;
+    margin-top: 10px;
+    margin-right: 150px;
+}
+
+#teamap {
+    margin-right: 70px;
+    padding: 0 10px;
+    width: 80px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;
+}
+
+#teambp {
+    padding: 0 10px;
+    width: 80px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: solid 3px #52A8B8;
+}
+
+#place_info {
+    display: inline;
+    color: red;
 }
 
 #add_place_box {
@@ -467,6 +533,11 @@ p {
     border: solid 3px #52A8B8;
 }
 
+#logo_info {
+    display: inline;
+    color: red;    
+}
+
 #logo_box {
     margin-left: 300px;
 }
@@ -482,62 +553,13 @@ p {
     border: solid 3px #52A8B8;  
 }
 
-#teama {
-    position: absolute;
-    top: 310px;
-    left: 820px;
-    padding: 0 10px;
-    width: 100px;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 10px;
-    border: solid 3px #52A8B8;
-}
-
-#teamb {
-    position: absolute;
-    top: 310px;
-    left: 1000px;
-    padding: 0 10px;
-    width: 100px;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 10px;
-    border: solid 3px #52A8B8;
-}
-
-#teamap {
-    position: absolute;
-    top: 380px;
-    left: 840px;
-    padding: 0 10px;
-    width: 60px;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 10px;
-    border: solid 3px #52A8B8;
-}
-
-#teambp {
-    position: absolute;
-    top: 380px;
-    left: 1020px;
-    padding: 0 10px;
-    width: 60px;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 10px;
-    border: solid 3px #52A8B8;
-}
-
 #newadd {
-    position: absolute;
-    top: 650px;
-    left: 600px;
+    margin-top: 40px;
+    margin-left: 470px;
     width: 200px;
     height: 40px;
     border-radius: 10px;
-    background: #7fbfff;
+    background: blue;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
