@@ -127,7 +127,7 @@ p {
     height: 800px;
     width: 1200px;
     border-radius: 8px;
-    background: #eef5f6;
+    background: #fafaf7;
     border-radius: 10px;
 }
 
@@ -294,7 +294,7 @@ p {
     height: 800px;
     width: 1200px;
     border-radius: 8px;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.6);
     border-radius: 10px;
 }
 
@@ -440,6 +440,10 @@ p {
     font-weight: bold;
 }
 
+#artist_box {
+    width: 400px;
+}
+
 #artist {
     margin-top: 10px;
     margin-left: 10px;
@@ -457,6 +461,10 @@ p {
     font-weight: bold;
 }
 
+#livetitle_box{
+    width: 500px;
+}
+
 #livetitle {
     padding: 0 10px;
     margin-top: 10px;
@@ -472,14 +480,15 @@ p {
     float: right;
     margin-top: 10px;
     margin-right: 50px;
+    height: 50px;
 }
 
 #teama {
     margin-right: 30px;
-    padding: 0 10px;
+    padding: 1px 0 1px 10px;
     width: 200px;
     height: 50px;
-    font-size: 18px;
+    font-size: 23px;
     border-radius: 10px;
     border: solid 3px #52A8B8;
 }
@@ -488,7 +497,7 @@ p {
     padding: 0 10px;
     width: 200px;
     height: 50px;
-    font-size: 18px;
+    font-size: 23px;
     border-radius: 10px;
     border: solid 3px #52A8B8;
 }
