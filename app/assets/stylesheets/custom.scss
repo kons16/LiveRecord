@@ -146,9 +146,8 @@ p {
 }
 
 #name {
-    position: absolute;
-    top: 110px;
-    left: 950px;
+    margin: 0 0 0 780px;
+    width: 350px;
     font-size: 33px;
     color: #5c0544;
 }
@@ -218,7 +217,7 @@ p {
 
 /* マイページの要素 */
 #bar {
-    margin: 50px 0 0 780px;
+    margin: 3px 0 0 780px;
     width: 350px;
 }
 
