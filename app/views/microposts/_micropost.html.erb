@@ -120,7 +120,7 @@
 
 		<% if current_user.id == @user.id %>
 			<div id='tweetdele'>
-				<a href="http://twitter.com/intent/tweet?url=https://test.com/&text=<%= micropost.artist %>『<%= micropost.livetitle %>』(<%= micropost.place %>) に参加しました。" target="_blank" style="text-decoration:none;" >
+				<a href="http://twitter.com/intent/tweet?url=<%= url_for(only_path: false) %>&text=<%= micropost.artist %>『<%= micropost.livetitle %>』(<%= micropost.place %>) に参加しました。" target="_blank" style="text-decoration:none;" >
 					<img src='/logo/twitter.png' with='20' height='20' >
 				</a>
 

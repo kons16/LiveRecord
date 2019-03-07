@@ -4,6 +4,7 @@ class MicropostsController < ApplicationController
 
 	def new
 		@micropost = Micropost.new
+    @url = current_user
 	end
 
 	def create
