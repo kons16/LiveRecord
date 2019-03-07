@@ -23,8 +23,10 @@
             <div id='follow_block'>
                 <%= render 'layouts/stats' %>
                 <div id='follow_unfollow_btn'>
-                    <% if current_user.id != @user.id %>
-                        <%= render 'follow_form' %>
+                    <% if user_signed_in? %>
+                        <% if current_user.id != @user.id %>
+                            <%= render 'follow_form' %>
+                        <% end %>
                     <% end %>
                 </div>
             </div>
