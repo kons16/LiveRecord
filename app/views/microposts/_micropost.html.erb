@@ -59,8 +59,7 @@
         <% if user_signed_in? %>
     		<% if current_user.id == @user.id %>
     			<div id='tweetdele'>
-    				<a href="http://twitter.com/intent/tweet?url=<%= url_for(only_path: false) %>&text=
-    					<%= micropost.teama %> vs <%= micropost.teamb %> を観戦しました。(<%= micropost.place %> 結果:<%= micropost.apoint %>-<%= micropost.bpoint %>)" target="_blank" >
+    				<a href="http://twitter.com/intent/tweet?url=<%= url_for(only_path: false) %>&text=<%= micropost.teama %> vs <%= micropost.teamb %> を観戦しました。(<%= micropost.place %> 結果:<%= micropost.apoint %>-<%= micropost.bpoint %>)" target="_blank" >
     				<img src='/logo/twitter.png' with='20' height='20'>
     				</a>
 
