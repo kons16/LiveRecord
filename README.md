@@ -7,4 +7,4 @@ https://addticket.herokuapp.com/
 * ロゴ表示により, 一瞬でアーティストが誰か判別可能です.
 * フォロー&フォロワー機能により, 友達がどのライブに行ったか確認できます.  
 
-<img width="800" alt="2019-01-29 18 47 11" src="https://user-images.githubusercontent.com/31591102/51899426-51094600-23f6-11e9-8349-60157ca91cb2.png">
+<img width="800" alt="2019-03-07 20 56 47" src="https://user-images.githubusercontent.com/31591102/53955231-c7971300-411b-11e9-8399-8561dfd7b943.png">
