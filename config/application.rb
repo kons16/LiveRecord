@@ -11,5 +11,6 @@ module Liverecord
   	config.time_zone = 'Tokyo'
     config.load_defaults 5.1
     config.i18n.default_locale = :ja
+    config.assets.initialize_on_precompile = false
   end
 end
