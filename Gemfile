@@ -13,7 +13,7 @@ gem 'devise'
 gem 'omniauth-twitter'
 gem 'dotenv-rails'
 gem 'will_paginate'
-gem 'bootstrap-sass'
+gem "bootstrap-sass", ">= 3.4.1"
 gem 'jquery-rails'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
