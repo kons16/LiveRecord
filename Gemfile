@@ -7,7 +7,7 @@ end
 
 
 gem 'rails', '~> 5.1.6'
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 4.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'devise'
 gem 'omniauth-twitter'
